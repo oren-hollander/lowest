@@ -1,32 +1,27 @@
-import type { List, Dictionary, Tx } from '../types'
-import { transformDictionary } from '../util'
+import type { List, Dictionary, Tx, Collection } from '../types'
+import { isList, transformDictionary } from '../util'
 
 type Mapper<I, O> = {
-  (i: Dictionary<I>): Dictionary<O>
-  (i: List<I>): List<O>
+  (dict: Dictionary<I>): Dictionary<O>
+  (list: List<I>): List<O>
 }
 
-const mapper = <I, O>(tx: Tx<I, O>, list_dict: List<I> | Dictionary<I>): List<O> | Dictionary<O> => {
-  if (Array.isArray(list_dict)) {
-    const list = list_dict as List<I>
-    return list.map(tx)
-  } else {
-    const dict = list_dict as Dictionary<I>
-    return transformDictionary(dict, values => values.map(([key, value]) => [key, tx(value)]))
-  }
-}
+const mapCollection = <I, O>(collection: Collection<I>, tx: Tx<I, O>): Collection<O> =>
+  isList(collection)
+    ? collection.map(tx)
+    : transformDictionary(collection, values => values.map(([key, value]) => [key, tx(value)]))
 
 export function map<I, O>(list: List<I>, f: Tx<I, O>): List<O>
 export function map<I, O>(dict: Dictionary<I>, tx: Tx<I, O>): Dictionary<O>
 export function map<I, O>(tx: Tx<I, O>): Mapper<I, O>
 export function map<I, O>(
-  list_dict_tx: List<I> | Dictionary<I> | Tx<I, O>,
+  list_dict_tx: Collection<I> | Tx<I, O>,
   tx?: Tx<I, O>
-): List<O> | Dictionary<O> | Tx<List<I>, List<O>> | Tx<Dictionary<I>, Dictionary<O>> {
+): Collection<O> | Tx<List<I>, List<O>> | Tx<Dictionary<I>, Dictionary<O>> {
   if (tx) {
-    return mapper(tx, list_dict_tx as List<I> | Dictionary<I>)
+    return mapCollection(list_dict_tx as Collection<I>, tx)
   } else {
     const tx = list_dict_tx as Tx<I, O>
-    return (list_dict: List<I> | Dictionary<I>) => mapper(tx, list_dict) as List<O> & Dictionary<O>
+    return (collection: Collection<I>) => mapCollection(collection, tx) as List<O> & Dictionary<O>
   }
 }

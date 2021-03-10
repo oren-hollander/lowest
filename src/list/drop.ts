@@ -1,4 +1,4 @@
-import { Hx, List } from '../types'
+import { List, Tx } from '../types'
 
 const dropImpl = <T>(list: List<T>, size: number): List<T> => {
   if (size < 0) {
@@ -11,8 +11,8 @@ const dropImpl = <T>(list: List<T>, size: number): List<T> => {
 }
 
 export function drop<T>(list: List<T>, size: number): List<T>
-export function drop<T>(size: number): Hx<List<T>>
-export function drop<T>(list_size: List<T> | number, size?: number): List<T> | Hx<List<T>> {
+export function drop<T>(size: number): Tx<List<T>>
+export function drop<T>(list_size: List<T> | number, size?: number): List<T> | Tx<List<T>> {
   if (size !== undefined) {
     const list = list_size as List<T>
     return dropImpl(list, size)
