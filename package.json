@@ -7,7 +7,7 @@
     "url": "git+https://github.com/oren-hollander/lowest.git"
   },
   "main": "dist/index.js",
-  "types": "lib/index.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
     "dist/**/*"
   ],
