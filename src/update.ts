@@ -1,13 +1,14 @@
 import type { Hx } from './transform'
+import { AnyObject } from './types'
 
-const updateImpl = <T extends {}, K extends keyof T>(obj: T, key: K, f: Hx<T[K]>): T => ({
+const updateImpl = <T extends AnyObject, K extends keyof T>(obj: T, key: K, f: Hx<T[K]>): T => ({
   ...obj,
   [key]: f(obj[key]),
 })
 
-export function update<T extends {}, K extends keyof T>(obj: T, key: K, f: Hx<T[K]>): T
-export function update<T extends {}, K extends keyof T>(key: K, f: Hx<T[K]>): (obj: T) => T
-export function update<T extends {}, K extends keyof T>(
+export function update<T extends AnyObject, K extends keyof T>(obj: T, key: K, f: Hx<T[K]>): T
+export function update<T extends AnyObject, K extends keyof T>(key: K, f: Hx<T[K]>): (obj: T) => T
+export function update<T extends AnyObject, K extends keyof T>(
   obj_key: T | K,
   key_f?: K | Hx<T[K]>,
   f?: Hx<T[K]>

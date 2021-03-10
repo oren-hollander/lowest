@@ -23,6 +23,7 @@ export function flow<T, TX1, TX2, TX3>(
 ): TX3
 export function flow<T, TX1, TX2>(values: T, f1: Transform<T, TX1>, tx2: Transform<TX1, TX2>): TX2
 export function flow<T, TX1>(values: T, f1: Transform<T, TX1>): TX1
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function flow<T>(values: T, ...txs: ((...args: unknown[]) => any)[]): unknown {
   return txs.reduce((values, tx) => tx(values), values)
 }
