@@ -12,7 +12,7 @@ const mapCollection = <I, O>(collection: Collection<I>, f: Func<I, O>): Collecti
     : transformDictionary(collection, values => values.map(([key, value]) => [key, f(value)]))
 
 /**
- * * {@link List} map
+ * * {@linkcode List} map
  * @template I The input type.
  * @template O The output type.
  * @param list The list to map over.
