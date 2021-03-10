@@ -2,9 +2,12 @@
   "name": "lowest",
   "version": "1.0.0",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oren-hollander/lowest.git"
+  },
   "main": "dist/index.js",
   "types": "lib/index.d.ts",
-
   "files": ["dist/**/*"],
   "scripts": {
     "lint": "eslint . --ext .ts",
