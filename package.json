@@ -1,6 +1,6 @@
 {
   "name": "lowest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "repository": {
     "type": "git",
@@ -8,19 +8,19 @@
   },
   "main": "dist/index.js",
   "types": "lib/index.d.ts",
-  "files": ["dist/**/*"],
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "lint": "eslint . --ext .ts",
     "format": "prettier --write \"src/**/*.ts\"",
     "build": "npm run format && npm run lint && tsc",
     "test": "jest --config jestconfig.json",
-
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test && npm run lint",
-    "preversion" : "npm run lint",
-    "version" : "npm run format && git add -A src",
-    "postversion" : "git push && git push --tags"
-
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "author": "Oren Hollander",
   "license": "ISC",
