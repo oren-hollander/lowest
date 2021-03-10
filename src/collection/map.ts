@@ -12,6 +12,7 @@ const mapCollection = <I, O>(collection: Collection<I>, f: Func<I, O>): Collecti
     : transformDictionary(collection, values => values.map(([key, value]) => [key, f(value)]))
 
 /**
+ * * {@link List} map
  * @template I The input type.
  * @template O The output type.
  * @param list The list to map over.
@@ -21,6 +22,7 @@ const mapCollection = <I, O>(collection: Collection<I>, f: Func<I, O>): Collecti
 export function map<I, O>(list: List<I>, f: Func<I, O>): List<O>
 
 /**
+ * {@link Dictionary} map
  * @template I The input type.
  * @template O The output type.
  * @param dict The dictionary to map over.
@@ -30,12 +32,14 @@ export function map<I, O>(list: List<I>, f: Func<I, O>): List<O>
 export function map<I, O>(dict: Dictionary<I>, f: Func<I, O>): Dictionary<O>
 
 /**
+ * Curried {@link Collection} map
  * @template I The input type.
  * @template O The output type.
  * @param f The transform function.
- * @return The [[Map]] function that accepts the collection
+ * @return The {@link Map} function that accepts the collection
  */
 export function map<I, O>(f: Func<I, O>): Map<I, O>
+
 export function map<I, O>(
   list_dict_f: Collection<I> | Func<I, O>,
   f?: Func<I, O>
