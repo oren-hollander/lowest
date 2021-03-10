@@ -1,5 +1,4 @@
-import { Dictionary } from './dictionary/dictionary'
-import { Tx } from './types'
+import { Dictionary, Tx } from './types'
 
 export const transformDictionary = <I, O>(
   dict: Dictionary<I>,

@@ -1,5 +1,4 @@
-import type { List, Tx } from '../types'
-import { Dictionary } from '../dictionary/dictionary'
+import type { List, Dictionary, Tx } from '../types'
 import { transformDictionary } from '../util'
 
 type Mapper<I, O> = {

@@ -1,7 +1,7 @@
-import { flow, map, update } from '.'
+import { flow, map, update } from '../index'
 
 describe('flow', () => {
-  test('should apply all operations in the flow for array of numbers', () => {
+  test('should apply all operations in the flow for list of numbers', () => {
     expect(
       flow(
         [1, 22, 999],
@@ -13,7 +13,7 @@ describe('flow', () => {
     ).toEqual([4, 8, 16])
   })
 
-  test('should apply all operations in the flow for array of objects', () => {
+  test('should apply all operations in the flow for list of objects', () => {
     expect(
       flow(
         [

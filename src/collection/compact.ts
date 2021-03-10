@@ -1,5 +1,4 @@
-import { Dictionary } from '../dictionary/dictionary'
-import { List, Nilable } from '../types'
+import { List, Dictionary, Nilable } from '../types'
 import { transformDictionary } from '../util'
 
 const isNotNil = (value: unknown): boolean => value !== null && value !== undefined
