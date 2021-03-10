@@ -1,3 +1,4 @@
 export { fromPairs } from './fromPairs'
 export { toPairs } from './toPairs'
-export { toList } from './toList'
+export { values } from './values'
+export { keys } from './keys'
