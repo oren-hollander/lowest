@@ -1,5 +1,5 @@
 import { map } from './map'
-import { Dictionary } from '../object/dictionary'
+import { Dictionary } from '../dictionary/dictionary'
 
 describe('map', () => {
   describe('object', () => {

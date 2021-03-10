@@ -1,3 +1,3 @@
 export type Dictionary<T> = {
-  [key: string]: T
+  readonly [key: string]: T
 }

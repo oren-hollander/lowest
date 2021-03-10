@@ -1,12 +1,12 @@
-import { Tx } from '../types'
+import { List, LL, Tx } from '../types'
 
-const chunkImpl = <T>(size: number, xs: T[]): T[][] => {
+const chunkImpl = <T>(size: number, list: List<T>): LL<T> => {
   if (size < 1) {
     throw new Error('Chunk size must be a positive number')
   }
 
   const result: T[][] = []
-  let remaining: T[] = xs
+  let remaining: List<T> = list
   while (remaining.length > 0) {
     result.push(remaining.slice(0, size))
     remaining = remaining.slice(size)
@@ -14,14 +14,14 @@ const chunkImpl = <T>(size: number, xs: T[]): T[][] => {
   return result
 }
 
-export function chunk<T>(xs: T[], size: number): T[][]
-export function chunk<T>(size: number): Tx<T[], T[][]>
-export function chunk<T>(xs_size: T[] | number, size?: number): T[][] | Tx<T[], T[][]> {
+export function chunk<T>(list: List<T>, size: number): LL<T>
+export function chunk<T>(size: number): Tx<List<T>, LL<T>>
+export function chunk<T>(list_size: List<T> | number, size?: number): LL<T> | Tx<List<T>, LL<T>> {
   if (size !== undefined) {
-    const xs = xs_size as T[]
-    return chunkImpl(size, xs)
+    const list = list_size as List<T>
+    return chunkImpl(size, list)
   } else {
-    const size = xs_size as number
-    return (xs: T[]): T[][] => chunkImpl(size, xs)
+    const size = list_size as number
+    return (list: List<T>): LL<T> => chunkImpl(size, list)
   }
 }
