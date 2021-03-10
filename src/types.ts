@@ -20,3 +20,5 @@ export const ListType = Symbol('list')
 export const DictionaryType = Symbol('dictionary')
 
 export type CollectionType = typeof ListType | typeof DictionaryType
+
+export type Pair<T> = [string, T]

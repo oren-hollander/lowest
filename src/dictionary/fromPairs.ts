@@ -1,3 +1,3 @@
-import { List, Dictionary } from '../types'
+import { List, Dictionary, Pair } from '../types'
 
-export const fromPairs = <T>(pairs: List<[string, T]>): Dictionary<T> => Object.fromEntries(pairs)
+export const fromPairs = <T>(pairs: List<Pair<T>>): Dictionary<T> => Object.fromEntries(pairs)
