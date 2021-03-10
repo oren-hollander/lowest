@@ -1,9 +1,9 @@
-import { Collection, CollectionType, Dictionary, DictionaryType, List, ListType, Pair, Tx } from './types'
+import { Collection, CollectionType, Dictionary, DictionaryType, List, ListType, Pair, Func } from './types'
 import { values } from './dictionary'
 
 export const transformDictionary = <I, O>(
   dict: Dictionary<I>,
-  tx: Tx<ReadonlyArray<Pair<I>>, ReadonlyArray<Pair<O>>>
+  tx: Func<ReadonlyArray<Pair<I>>, ReadonlyArray<Pair<O>>>
 ): Dictionary<O> => Object.fromEntries(tx(Object.entries(dict)))
 
 export const collectionType = <T>(collection: Collection<T>): CollectionType =>

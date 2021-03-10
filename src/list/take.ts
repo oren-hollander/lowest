@@ -1,4 +1,4 @@
-import { Tx, List } from '../types'
+import { Func, List } from '../types'
 
 const takeImpl = <T>(list: List<T>, size: number): List<T> => {
   if (size < 0) {
@@ -11,8 +11,8 @@ const takeImpl = <T>(list: List<T>, size: number): List<T> => {
 }
 
 export function take<T>(list: readonly T[], size: number): List<T>
-export function take<T>(size: number): Tx<List<T>>
-export function take<T>(list_size: List<T> | number, size?: number): List<T> | Tx<List<T>> {
+export function take<T>(size: number): Func<List<T>>
+export function take<T>(list_size: List<T> | number, size?: number): List<T> | Func<List<T>> {
   if (size !== undefined) {
     const list = list_size as List<T>
     return takeImpl(list, size)

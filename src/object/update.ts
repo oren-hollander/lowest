@@ -1,16 +1,16 @@
-import { AnyObject, Tx } from '../types'
+import { AnyObject, Func } from '../types'
 
-const updateImpl = <T extends AnyObject, K extends keyof T>(obj: T, key: K, f: Tx<T[K]>): T => ({
+const updateImpl = <T extends AnyObject, K extends keyof T>(obj: T, key: K, f: Func<T[K]>): T => ({
   ...obj,
   [key]: f(obj[key]),
 })
 
-export function update<T extends AnyObject, K extends keyof T>(obj: T, key: K, f: Tx<T[K]>): T
-export function update<T extends AnyObject, K extends keyof T>(key: K, f: Tx<T[K]>): (obj: T) => T
+export function update<T extends AnyObject, K extends keyof T>(obj: T, key: K, f: Func<T[K]>): T
+export function update<T extends AnyObject, K extends keyof T>(key: K, f: Func<T[K]>): (obj: T) => T
 export function update<T extends AnyObject, K extends keyof T>(
   obj_key: T | K,
-  key_f?: K | Tx<T[K]>,
-  f?: Tx<T[K]>
+  key_f?: K | Func<T[K]>,
+  f?: Func<T[K]>
 ): T | ((obj: T) => T) {
   if (f) {
     const obj = obj_key as T
@@ -18,7 +18,7 @@ export function update<T extends AnyObject, K extends keyof T>(
     return updateImpl(obj, key, f)
   } else {
     const key = obj_key as K
-    const f = key_f as Tx<T[K]>
+    const f = key_f as Func<T[K]>
     return (obj: T): T => updateImpl(obj, key, f)
   }
 }

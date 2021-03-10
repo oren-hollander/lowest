@@ -1,4 +1,4 @@
-import { Collection, Dictionary, List, Predicate, Tx } from '../types'
+import { Collection, Dictionary, List, Predicate, Func } from '../types'
 import { getPairValue, isList, transformDictionary } from '../util'
 
 type Filter<T> = {
@@ -17,7 +17,7 @@ export function filter<T>(p: Predicate<T>): Filter<T>
 export function filter<T>(
   list_dict_p: Collection<T> | Predicate<T>,
   p?: Predicate<T>
-): Collection<T> | Tx<List<T>> | Tx<Dictionary<T>> {
+): Collection<T> | Func<List<T>> | Func<Dictionary<T>> {
   if (p) {
     return filterCollection(list_dict_p as Collection<T>, p)
   } else {

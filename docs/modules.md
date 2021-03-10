@@ -52,9 +52,9 @@ Name | Type |
 
 **Returns:** A \| B
 
-Defined in: [object/assign.ts:3](https://github.com/oren-hollander/lowest/blob/741c915/src/object/assign.ts#L3)
+Defined in: [object/assign.ts:3](https://github.com/oren-hollander/lowest/blob/641fc07/src/object/assign.ts#L3)
 
-▸ **assign**<A, B\>(`a`: A): *Tx*<B, A \| B\>
+▸ **assign**<A, B\>(`a`: A): *Func*<B, A \| B\>
 
 #### Type parameters:
 
@@ -69,9 +69,9 @@ Name | Type |
 :------ | :------ |
 `a` | A |
 
-**Returns:** *Tx*<B, A \| B\>
+**Returns:** *Func*<B, A \| B\>
 
-Defined in: [object/assign.ts:4](https://github.com/oren-hollander/lowest/blob/741c915/src/object/assign.ts#L4)
+Defined in: [object/assign.ts:4](https://github.com/oren-hollander/lowest/blob/641fc07/src/object/assign.ts#L4)
 
 ___
 
@@ -94,9 +94,9 @@ Name | Type |
 
 **Returns:** *LL*<T\>
 
-Defined in: [list/chunk.ts:17](https://github.com/oren-hollander/lowest/blob/741c915/src/list/chunk.ts#L17)
+Defined in: [list/chunk.ts:17](https://github.com/oren-hollander/lowest/blob/641fc07/src/list/chunk.ts#L17)
 
-▸ **chunk**<T\>(`size`: *number*): *Tx*<List<T\>, LL<T\>\>
+▸ **chunk**<T\>(`size`: *number*): *Func*<List<T\>, LL<T\>\>
 
 #### Type parameters:
 
@@ -110,9 +110,9 @@ Name | Type |
 :------ | :------ |
 `size` | *number* |
 
-**Returns:** *Tx*<List<T\>, LL<T\>\>
+**Returns:** *Func*<List<T\>, LL<T\>\>
 
-Defined in: [list/chunk.ts:18](https://github.com/oren-hollander/lowest/blob/741c915/src/list/chunk.ts#L18)
+Defined in: [list/chunk.ts:18](https://github.com/oren-hollander/lowest/blob/641fc07/src/list/chunk.ts#L18)
 
 ___
 
@@ -134,7 +134,7 @@ Name | Type |
 
 **Returns:** *List*<T\>
 
-Defined in: [collection/compact.ts:6](https://github.com/oren-hollander/lowest/blob/741c915/src/collection/compact.ts#L6)
+Defined in: [collection/compact.ts:6](https://github.com/oren-hollander/lowest/blob/641fc07/src/collection/compact.ts#L6)
 
 ▸ **compact**<T\>(`dict`: *Dictionary*<Nilable<T\>\>): *Dictionary*<T\>
 
@@ -152,7 +152,7 @@ Name | Type |
 
 **Returns:** *Dictionary*<T\>
 
-Defined in: [collection/compact.ts:7](https://github.com/oren-hollander/lowest/blob/741c915/src/collection/compact.ts#L7)
+Defined in: [collection/compact.ts:7](https://github.com/oren-hollander/lowest/blob/641fc07/src/collection/compact.ts#L7)
 
 ___
 
@@ -175,9 +175,9 @@ Name | Type |
 
 **Returns:** *List*<T\>
 
-Defined in: [list/drop.ts:13](https://github.com/oren-hollander/lowest/blob/741c915/src/list/drop.ts#L13)
+Defined in: [list/drop.ts:13](https://github.com/oren-hollander/lowest/blob/641fc07/src/list/drop.ts#L13)
 
-▸ **drop**<T\>(`size`: *number*): *Tx*<List<T\>\>
+▸ **drop**<T\>(`size`: *number*): *Func*<List<T\>\>
 
 #### Type parameters:
 
@@ -191,9 +191,9 @@ Name | Type |
 :------ | :------ |
 `size` | *number* |
 
-**Returns:** *Tx*<List<T\>\>
+**Returns:** *Func*<List<T\>\>
 
-Defined in: [list/drop.ts:14](https://github.com/oren-hollander/lowest/blob/741c915/src/list/drop.ts#L14)
+Defined in: [list/drop.ts:14](https://github.com/oren-hollander/lowest/blob/641fc07/src/list/drop.ts#L14)
 
 ___
 
@@ -216,9 +216,9 @@ Name | Type |
 
 **Returns:** *boolean*
 
-Defined in: [collection/every.ts:4](https://github.com/oren-hollander/lowest/blob/741c915/src/collection/every.ts#L4)
+Defined in: [collection/every.ts:4](https://github.com/oren-hollander/lowest/blob/641fc07/src/collection/every.ts#L4)
 
-▸ **every**<T\>(`p`: *Predicate*<T\>): *Tx*<Collection<T\>, boolean\>
+▸ **every**<T\>(`p`: *Predicate*<T\>): *Func*<Collection<T\>, boolean\>
 
 #### Type parameters:
 
@@ -232,9 +232,9 @@ Name | Type |
 :------ | :------ |
 `p` | *Predicate*<T\> |
 
-**Returns:** *Tx*<Collection<T\>, boolean\>
+**Returns:** *Func*<Collection<T\>, boolean\>
 
-Defined in: [collection/every.ts:5](https://github.com/oren-hollander/lowest/blob/741c915/src/collection/every.ts#L5)
+Defined in: [collection/every.ts:5](https://github.com/oren-hollander/lowest/blob/641fc07/src/collection/every.ts#L5)
 
 ___
 
@@ -257,7 +257,7 @@ Name | Type |
 
 **Returns:** *List*<T\>
 
-Defined in: [collection/filter.ts:14](https://github.com/oren-hollander/lowest/blob/741c915/src/collection/filter.ts#L14)
+Defined in: [collection/filter.ts:14](https://github.com/oren-hollander/lowest/blob/641fc07/src/collection/filter.ts#L14)
 
 ▸ **filter**<T\>(`dict`: *Dictionary*<T\>, `p`: *Predicate*<T\>): *Dictionary*<T\>
 
@@ -276,7 +276,7 @@ Name | Type |
 
 **Returns:** *Dictionary*<T\>
 
-Defined in: [collection/filter.ts:15](https://github.com/oren-hollander/lowest/blob/741c915/src/collection/filter.ts#L15)
+Defined in: [collection/filter.ts:15](https://github.com/oren-hollander/lowest/blob/641fc07/src/collection/filter.ts#L15)
 
 ▸ **filter**<T\>(`p`: *Predicate*<T\>): *Filter*<T\>
 
@@ -294,7 +294,7 @@ Name | Type |
 
 **Returns:** *Filter*<T\>
 
-Defined in: [collection/filter.ts:16](https://github.com/oren-hollander/lowest/blob/741c915/src/collection/filter.ts#L16)
+Defined in: [collection/filter.ts:16](https://github.com/oren-hollander/lowest/blob/641fc07/src/collection/filter.ts#L16)
 
 ___
 
@@ -317,7 +317,7 @@ Name | Type |
 
 **Returns:** *Maybe*<T\>
 
-Defined in: [collection/find.ts:8](https://github.com/oren-hollander/lowest/blob/741c915/src/collection/find.ts#L8)
+Defined in: [collection/find.ts:8](https://github.com/oren-hollander/lowest/blob/641fc07/src/collection/find.ts#L8)
 
 ▸ **find**<T\>(`dict`: *Dictionary*<T\>, `p`: *Predicate*<T\>): *Maybe*<T\>
 
@@ -336,7 +336,7 @@ Name | Type |
 
 **Returns:** *Maybe*<T\>
 
-Defined in: [collection/find.ts:9](https://github.com/oren-hollander/lowest/blob/741c915/src/collection/find.ts#L9)
+Defined in: [collection/find.ts:9](https://github.com/oren-hollander/lowest/blob/641fc07/src/collection/find.ts#L9)
 
 ▸ **find**<T\>(`p`: *Predicate*<T\>): *function*
 
@@ -354,13 +354,13 @@ Name | Type |
 
 **Returns:** (`collection`: *Collection*<T\>) => *Maybe*<T\>
 
-Defined in: [collection/find.ts:10](https://github.com/oren-hollander/lowest/blob/741c915/src/collection/find.ts#L10)
+Defined in: [collection/find.ts:10](https://github.com/oren-hollander/lowest/blob/641fc07/src/collection/find.ts#L10)
 
 ___
 
 ### flow
 
-▸ **flow**<T, TX1, TX2, TX3, TX4, TX5\>(`values`: T, `f1`: *Tx*<T, TX1\>, `tx2`: *Tx*<TX1, TX2\>, `tx3`: *Tx*<TX2, TX3\>, `tx4`: *Tx*<TX3, TX4\>, `tx5`: *Tx*<TX4, TX5\>): TX5
+▸ **flow**<T, TX1, TX2, TX3, TX4, TX5\>(`values`: T, `f1`: *Func*<T, TX1\>, `tx2`: *Func*<TX1, TX2\>, `tx3`: *Func*<TX2, TX3\>, `tx4`: *Func*<TX3, TX4\>, `tx5`: *Func*<TX4, TX5\>): TX5
 
 #### Type parameters:
 
@@ -378,17 +378,17 @@ Name |
 Name | Type |
 :------ | :------ |
 `values` | T |
-`f1` | *Tx*<T, TX1\> |
-`tx2` | *Tx*<TX1, TX2\> |
-`tx3` | *Tx*<TX2, TX3\> |
-`tx4` | *Tx*<TX3, TX4\> |
-`tx5` | *Tx*<TX4, TX5\> |
+`f1` | *Func*<T, TX1\> |
+`tx2` | *Func*<TX1, TX2\> |
+`tx3` | *Func*<TX2, TX3\> |
+`tx4` | *Func*<TX3, TX4\> |
+`tx5` | *Func*<TX4, TX5\> |
 
 **Returns:** TX5
 
-Defined in: [function/flow.ts:3](https://github.com/oren-hollander/lowest/blob/741c915/src/function/flow.ts#L3)
+Defined in: [function/flow.ts:3](https://github.com/oren-hollander/lowest/blob/641fc07/src/function/flow.ts#L3)
 
-▸ **flow**<T, TX1, TX2, TX3, TX4\>(`values`: T, `tx1`: *Tx*<T, TX1\>, `tx2`: *Tx*<TX1, TX2\>, `tx3`: *Tx*<TX2, TX3\>, `tx4`: *Tx*<TX3, TX4\>): TX4
+▸ **flow**<T, TX1, TX2, TX3, TX4\>(`values`: T, `tx1`: *Func*<T, TX1\>, `tx2`: *Func*<TX1, TX2\>, `tx3`: *Func*<TX2, TX3\>, `tx4`: *Func*<TX3, TX4\>): TX4
 
 #### Type parameters:
 
@@ -405,16 +405,16 @@ Name |
 Name | Type |
 :------ | :------ |
 `values` | T |
-`tx1` | *Tx*<T, TX1\> |
-`tx2` | *Tx*<TX1, TX2\> |
-`tx3` | *Tx*<TX2, TX3\> |
-`tx4` | *Tx*<TX3, TX4\> |
+`tx1` | *Func*<T, TX1\> |
+`tx2` | *Func*<TX1, TX2\> |
+`tx3` | *Func*<TX2, TX3\> |
+`tx4` | *Func*<TX3, TX4\> |
 
 **Returns:** TX4
 
-Defined in: [function/flow.ts:11](https://github.com/oren-hollander/lowest/blob/741c915/src/function/flow.ts#L11)
+Defined in: [function/flow.ts:11](https://github.com/oren-hollander/lowest/blob/641fc07/src/function/flow.ts#L11)
 
-▸ **flow**<T, TX1, TX2, TX3\>(`values`: T, `f1`: *Tx*<T, TX1\>, `tx2`: *Tx*<TX1, TX2\>, `tx3`: *Tx*<TX2, TX3\>): TX3
+▸ **flow**<T, TX1, TX2, TX3\>(`values`: T, `f1`: *Func*<T, TX1\>, `tx2`: *Func*<TX1, TX2\>, `tx3`: *Func*<TX2, TX3\>): TX3
 
 #### Type parameters:
 
@@ -430,15 +430,15 @@ Name |
 Name | Type |
 :------ | :------ |
 `values` | T |
-`f1` | *Tx*<T, TX1\> |
-`tx2` | *Tx*<TX1, TX2\> |
-`tx3` | *Tx*<TX2, TX3\> |
+`f1` | *Func*<T, TX1\> |
+`tx2` | *Func*<TX1, TX2\> |
+`tx3` | *Func*<TX2, TX3\> |
 
 **Returns:** TX3
 
-Defined in: [function/flow.ts:18](https://github.com/oren-hollander/lowest/blob/741c915/src/function/flow.ts#L18)
+Defined in: [function/flow.ts:18](https://github.com/oren-hollander/lowest/blob/641fc07/src/function/flow.ts#L18)
 
-▸ **flow**<T, TX1, TX2\>(`values`: T, `f1`: *Tx*<T, TX1\>, `tx2`: *Tx*<TX1, TX2\>): TX2
+▸ **flow**<T, TX1, TX2\>(`values`: T, `f1`: *Func*<T, TX1\>, `tx2`: *Func*<TX1, TX2\>): TX2
 
 #### Type parameters:
 
@@ -453,14 +453,14 @@ Name |
 Name | Type |
 :------ | :------ |
 `values` | T |
-`f1` | *Tx*<T, TX1\> |
-`tx2` | *Tx*<TX1, TX2\> |
+`f1` | *Func*<T, TX1\> |
+`tx2` | *Func*<TX1, TX2\> |
 
 **Returns:** TX2
 
-Defined in: [function/flow.ts:19](https://github.com/oren-hollander/lowest/blob/741c915/src/function/flow.ts#L19)
+Defined in: [function/flow.ts:19](https://github.com/oren-hollander/lowest/blob/641fc07/src/function/flow.ts#L19)
 
-▸ **flow**<T, TX1\>(`values`: T, `f1`: *Tx*<T, TX1\>): TX1
+▸ **flow**<T, TX1\>(`values`: T, `f1`: *Func*<T, TX1\>): TX1
 
 #### Type parameters:
 
@@ -474,11 +474,11 @@ Name |
 Name | Type |
 :------ | :------ |
 `values` | T |
-`f1` | *Tx*<T, TX1\> |
+`f1` | *Func*<T, TX1\> |
 
 **Returns:** TX1
 
-Defined in: [function/flow.ts:20](https://github.com/oren-hollander/lowest/blob/741c915/src/function/flow.ts#L20)
+Defined in: [function/flow.ts:20](https://github.com/oren-hollander/lowest/blob/641fc07/src/function/flow.ts#L20)
 
 ___
 
@@ -500,7 +500,7 @@ Name | Type |
 
 **Returns:** *Dictionary*<T\>
 
-Defined in: [dictionary/fromPairs.ts:3](https://github.com/oren-hollander/lowest/blob/741c915/src/dictionary/fromPairs.ts#L3)
+Defined in: [dictionary/fromPairs.ts:3](https://github.com/oren-hollander/lowest/blob/641fc07/src/dictionary/fromPairs.ts#L3)
 
 ___
 
@@ -522,7 +522,7 @@ Name | Type |
 
 **Returns:** T
 
-Defined in: [list/head.ts:4](https://github.com/oren-hollander/lowest/blob/741c915/src/list/head.ts#L4)
+Defined in: [list/head.ts:4](https://github.com/oren-hollander/lowest/blob/641fc07/src/list/head.ts#L4)
 
 ___
 
@@ -544,7 +544,7 @@ Name | Type |
 
 **Returns:** T
 
-Defined in: [function/identity.ts:1](https://github.com/oren-hollander/lowest/blob/741c915/src/function/identity.ts#L1)
+Defined in: [function/identity.ts:1](https://github.com/oren-hollander/lowest/blob/641fc07/src/function/identity.ts#L1)
 
 ___
 
@@ -560,70 +560,76 @@ Name | Type |
 
 **Returns:** *List*<string\>
 
-Defined in: [dictionary/keys.ts:7](https://github.com/oren-hollander/lowest/blob/741c915/src/dictionary/keys.ts#L7)
+Defined in: [dictionary/keys.ts:7](https://github.com/oren-hollander/lowest/blob/641fc07/src/dictionary/keys.ts#L7)
 
 ___
 
 ### map
 
-▸ **map**<I, O\>(`list`: *List*<I\>, `f`: *Tx*<I, O\>): *List*<O\>
+▸ **map**<I, O\>(`list`: *List*<I\>, `f`: *Func*<I, O\>): *List*<O\>
 
 #### Type parameters:
 
-Name |
-:------ |
-`I` |
-`O` |
+Name | Description |
+:------ | :------ |
+`I` | The input type.   |
+`O` | The output type.   |
 
 #### Parameters:
 
-Name | Type |
-:------ | :------ |
-`list` | *List*<I\> |
-`f` | *Tx*<I, O\> |
+Name | Type | Description |
+:------ | :------ | :------ |
+`list` | *List*<I\> | The list to map over.   |
+`f` | *Func*<I, O\> | The transform function.   |
 
 **Returns:** *List*<O\>
 
-Defined in: [collection/map.ts:14](https://github.com/oren-hollander/lowest/blob/741c915/src/collection/map.ts#L14)
+The transformed list
 
-▸ **map**<I, O\>(`dict`: *Dictionary*<I\>, `tx`: *Tx*<I, O\>): *Dictionary*<O\>
+Defined in: [collection/map.ts:21](https://github.com/oren-hollander/lowest/blob/641fc07/src/collection/map.ts#L21)
+
+▸ **map**<I, O\>(`dict`: *Dictionary*<I\>, `f`: *Func*<I, O\>): *Dictionary*<O\>
 
 #### Type parameters:
 
-Name |
-:------ |
-`I` |
-`O` |
+Name | Description |
+:------ | :------ |
+`I` | The input type.   |
+`O` | The output type.   |
 
 #### Parameters:
 
-Name | Type |
-:------ | :------ |
-`dict` | *Dictionary*<I\> |
-`tx` | *Tx*<I, O\> |
+Name | Type | Description |
+:------ | :------ | :------ |
+`dict` | *Dictionary*<I\> | The dictionary to map over.   |
+`f` | *Func*<I, O\> | The transform function.   |
 
 **Returns:** *Dictionary*<O\>
 
-Defined in: [collection/map.ts:15](https://github.com/oren-hollander/lowest/blob/741c915/src/collection/map.ts#L15)
+The transformed dictionary
 
-▸ **map**<I, O\>(`tx`: *Tx*<I, O\>): *Mapper*<I, O\>
+Defined in: [collection/map.ts:30](https://github.com/oren-hollander/lowest/blob/641fc07/src/collection/map.ts#L30)
+
+▸ **map**<I, O\>(`f`: *Func*<I, O\>): *Map*<I, O\>
 
 #### Type parameters:
 
-Name |
-:------ |
-`I` |
-`O` |
+Name | Description |
+:------ | :------ |
+`I` | The input type.   |
+`O` | The output type.   |
 
 #### Parameters:
 
-Name | Type |
-:------ | :------ |
-`tx` | *Tx*<I, O\> |
+Name | Type | Description |
+:------ | :------ | :------ |
+`f` | *Func*<I, O\> | The transform function.   |
 
-**Returns:** *Mapper*<I, O\>
+**Returns:** *Map*<I, O\>
 
-Defined in: [collection/map.ts:16](https://github.com/oren-hollander/lowest/blob/741c915/src/collection/map.ts#L16)
+The [[Map]] function that accepts the collection
+
+Defined in: [collection/map.ts:38](https://github.com/oren-hollander/lowest/blob/641fc07/src/collection/map.ts#L38)
 
 ___
 
@@ -646,9 +652,9 @@ Name | Type |
 
 **Returns:** *Dictionary*<unknown\>
 
-Defined in: [dictionary/omit.ts:18](https://github.com/oren-hollander/lowest/blob/741c915/src/dictionary/omit.ts#L18)
+Defined in: [dictionary/omit.ts:18](https://github.com/oren-hollander/lowest/blob/641fc07/src/dictionary/omit.ts#L18)
 
-▸ **omit**<T\>(`keys`: *Keys*<T\>): *Tx*<T, Dictionary<unknown\>\>
+▸ **omit**<T\>(`keys`: *Keys*<T\>): *Func*<T, Dictionary<unknown\>\>
 
 #### Type parameters:
 
@@ -662,9 +668,9 @@ Name | Type |
 :------ | :------ |
 `keys` | *Keys*<T\> |
 
-**Returns:** *Tx*<T, Dictionary<unknown\>\>
+**Returns:** *Func*<T, Dictionary<unknown\>\>
 
-Defined in: [dictionary/omit.ts:19](https://github.com/oren-hollander/lowest/blob/741c915/src/dictionary/omit.ts#L19)
+Defined in: [dictionary/omit.ts:19](https://github.com/oren-hollander/lowest/blob/641fc07/src/dictionary/omit.ts#L19)
 
 ___
 
@@ -687,9 +693,9 @@ Name | Type |
 
 **Returns:** *Dictionary*<unknown\>
 
-Defined in: [dictionary/pick.ts:18](https://github.com/oren-hollander/lowest/blob/741c915/src/dictionary/pick.ts#L18)
+Defined in: [dictionary/pick.ts:18](https://github.com/oren-hollander/lowest/blob/641fc07/src/dictionary/pick.ts#L18)
 
-▸ **pick**<T\>(`keys`: *Keys*<T\>): *Tx*<T, Dictionary<unknown\>\>
+▸ **pick**<T\>(`keys`: *Keys*<T\>): *Func*<T, Dictionary<unknown\>\>
 
 #### Type parameters:
 
@@ -703,9 +709,9 @@ Name | Type |
 :------ | :------ |
 `keys` | *Keys*<T\> |
 
-**Returns:** *Tx*<T, Dictionary<unknown\>\>
+**Returns:** *Func*<T, Dictionary<unknown\>\>
 
-Defined in: [dictionary/pick.ts:19](https://github.com/oren-hollander/lowest/blob/741c915/src/dictionary/pick.ts#L19)
+Defined in: [dictionary/pick.ts:19](https://github.com/oren-hollander/lowest/blob/641fc07/src/dictionary/pick.ts#L19)
 
 ___
 
@@ -728,9 +734,9 @@ Name | Type |
 
 **Returns:** *boolean*
 
-Defined in: [collection/some.ts:4](https://github.com/oren-hollander/lowest/blob/741c915/src/collection/some.ts#L4)
+Defined in: [collection/some.ts:4](https://github.com/oren-hollander/lowest/blob/641fc07/src/collection/some.ts#L4)
 
-▸ **some**<T\>(`p`: *Predicate*<T\>): *Tx*<Collection<T\>, boolean\>
+▸ **some**<T\>(`p`: *Predicate*<T\>): *Func*<Collection<T\>, boolean\>
 
 #### Type parameters:
 
@@ -744,9 +750,9 @@ Name | Type |
 :------ | :------ |
 `p` | *Predicate*<T\> |
 
-**Returns:** *Tx*<Collection<T\>, boolean\>
+**Returns:** *Func*<Collection<T\>, boolean\>
 
-Defined in: [collection/some.ts:5](https://github.com/oren-hollander/lowest/blob/741c915/src/collection/some.ts#L5)
+Defined in: [collection/some.ts:5](https://github.com/oren-hollander/lowest/blob/641fc07/src/collection/some.ts#L5)
 
 ___
 
@@ -769,7 +775,7 @@ Name | Type |
 
 **Returns:** *List*<T\>
 
-Defined in: [list/sortBy.ts:15](https://github.com/oren-hollander/lowest/blob/741c915/src/list/sortBy.ts#L15)
+Defined in: [list/sortBy.ts:15](https://github.com/oren-hollander/lowest/blob/641fc07/src/list/sortBy.ts#L15)
 
 ▸ **sortBy**<T\>(`dict`: *Dictionary*<T\>, `tx`: *SortValue*<T\>): *Dictionary*<T\>
 
@@ -788,7 +794,7 @@ Name | Type |
 
 **Returns:** *Dictionary*<T\>
 
-Defined in: [list/sortBy.ts:16](https://github.com/oren-hollander/lowest/blob/741c915/src/list/sortBy.ts#L16)
+Defined in: [list/sortBy.ts:16](https://github.com/oren-hollander/lowest/blob/641fc07/src/list/sortBy.ts#L16)
 
 ▸ **sortBy**<T\>(`sortValue`: *SortValue*<T\>): *SortBy*<T\>
 
@@ -806,7 +812,7 @@ Name | Type |
 
 **Returns:** *SortBy*<T\>
 
-Defined in: [list/sortBy.ts:17](https://github.com/oren-hollander/lowest/blob/741c915/src/list/sortBy.ts#L17)
+Defined in: [list/sortBy.ts:17](https://github.com/oren-hollander/lowest/blob/641fc07/src/list/sortBy.ts#L17)
 
 ___
 
@@ -828,7 +834,7 @@ Name | Type |
 
 **Returns:** *List*<T\>
 
-Defined in: [list/tail.ts:4](https://github.com/oren-hollander/lowest/blob/741c915/src/list/tail.ts#L4)
+Defined in: [list/tail.ts:4](https://github.com/oren-hollander/lowest/blob/641fc07/src/list/tail.ts#L4)
 
 ___
 
@@ -851,9 +857,9 @@ Name | Type |
 
 **Returns:** *List*<T\>
 
-Defined in: [list/take.ts:13](https://github.com/oren-hollander/lowest/blob/741c915/src/list/take.ts#L13)
+Defined in: [list/take.ts:13](https://github.com/oren-hollander/lowest/blob/641fc07/src/list/take.ts#L13)
 
-▸ **take**<T\>(`size`: *number*): *Tx*<List<T\>\>
+▸ **take**<T\>(`size`: *number*): *Func*<List<T\>\>
 
 #### Type parameters:
 
@@ -867,9 +873,9 @@ Name | Type |
 :------ | :------ |
 `size` | *number* |
 
-**Returns:** *Tx*<List<T\>\>
+**Returns:** *Func*<List<T\>\>
 
-Defined in: [list/take.ts:14](https://github.com/oren-hollander/lowest/blob/741c915/src/list/take.ts#L14)
+Defined in: [list/take.ts:14](https://github.com/oren-hollander/lowest/blob/641fc07/src/list/take.ts#L14)
 
 ___
 
@@ -891,7 +897,7 @@ Name | Type |
 
 **Returns:** *List*<Pair<T\>\>
 
-Defined in: [dictionary/toPairs.ts:3](https://github.com/oren-hollander/lowest/blob/741c915/src/dictionary/toPairs.ts#L3)
+Defined in: [dictionary/toPairs.ts:3](https://github.com/oren-hollander/lowest/blob/641fc07/src/dictionary/toPairs.ts#L3)
 
 ___
 
@@ -913,13 +919,13 @@ Name | Type |
 
 **Returns:** *List*<T\>
 
-Defined in: [list/uniq.ts:4](https://github.com/oren-hollander/lowest/blob/741c915/src/list/uniq.ts#L4)
+Defined in: [list/uniq.ts:4](https://github.com/oren-hollander/lowest/blob/641fc07/src/list/uniq.ts#L4)
 
 ___
 
 ### update
 
-▸ **update**<T, K\>(`obj`: T, `key`: K, `f`: *Tx*<T[K]\>): T
+▸ **update**<T, K\>(`obj`: T, `key`: K, `f`: *Func*<T[K]\>): T
 
 #### Type parameters:
 
@@ -934,13 +940,13 @@ Name | Type |
 :------ | :------ |
 `obj` | T |
 `key` | K |
-`f` | *Tx*<T[K]\> |
+`f` | *Func*<T[K]\> |
 
 **Returns:** T
 
-Defined in: [object/update.ts:8](https://github.com/oren-hollander/lowest/blob/741c915/src/object/update.ts#L8)
+Defined in: [object/update.ts:8](https://github.com/oren-hollander/lowest/blob/641fc07/src/object/update.ts#L8)
 
-▸ **update**<T, K\>(`key`: K, `f`: *Tx*<T[K]\>): *function*
+▸ **update**<T, K\>(`key`: K, `f`: *Func*<T[K]\>): *function*
 
 #### Type parameters:
 
@@ -954,11 +960,11 @@ Name | Type |
 Name | Type |
 :------ | :------ |
 `key` | K |
-`f` | *Tx*<T[K]\> |
+`f` | *Func*<T[K]\> |
 
 **Returns:** (`obj`: T) => T
 
-Defined in: [object/update.ts:9](https://github.com/oren-hollander/lowest/blob/741c915/src/object/update.ts#L9)
+Defined in: [object/update.ts:9](https://github.com/oren-hollander/lowest/blob/641fc07/src/object/update.ts#L9)
 
 ___
 
@@ -980,4 +986,4 @@ Name | Type |
 
 **Returns:** *List*<T\>
 
-Defined in: [dictionary/values.ts:7](https://github.com/oren-hollander/lowest/blob/741c915/src/dictionary/values.ts#L7)
+Defined in: [dictionary/values.ts:7](https://github.com/oren-hollander/lowest/blob/641fc07/src/dictionary/values.ts#L7)

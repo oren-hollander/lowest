@@ -1,8 +1,8 @@
-import { AnyObject, Tx } from '../types'
+import { AnyObject, Func } from '../types'
 
 export function assign<A extends AnyObject, B extends AnyObject>(a: A, b: B): A | B
-export function assign<A extends AnyObject, B extends AnyObject>(a: A): Tx<B, A | B>
-export function assign<A extends AnyObject, B extends AnyObject>(a: A, b?: B): (A | B) | Tx<B, A | B> {
+export function assign<A extends AnyObject, B extends AnyObject>(a: A): Func<B, A | B>
+export function assign<A extends AnyObject, B extends AnyObject>(a: A, b?: B): (A | B) | Func<B, A | B> {
   if (b) {
     return { ...a, ...b }
   } else {
