@@ -15,8 +15,8 @@
     "lint": "eslint . --ext .ts",
     "format": "prettier --write \"src/**/*.ts\"",
     "build": "npm run format && npm run lint && tsc",
-    "test": "jest --watch",
-    "prepare": "npm run build",
+    "test": "tsc --project ./tsconfig.test.json && jest --watch",
+    "prepare": "rimraf dist && npm run build",
     "prepublishOnly": "jest && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
@@ -32,6 +32,7 @@
     "eslint": "^7.21.0",
     "jest": "^26.6.3",
     "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
     "ts-jest": "^26.5.3",
     "typescript": "^4.2.3"
   },

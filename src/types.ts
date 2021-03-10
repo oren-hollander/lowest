@@ -1,4 +1,5 @@
-export type AnyObject = Record<string, unknown>
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type AnyObject = Record<string, any>
 
 export type Tx<I, O = I> = (i: I) => O
 
