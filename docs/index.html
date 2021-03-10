@@ -7,7 +7,6 @@
 	<meta name="description" content="Documentation for lowest">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
-	<script async src="assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -41,6 +40,8 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -50,7 +51,12 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<h1>lowest</h1>
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="modules.html">Globals</a>
+				</li>
+			</ul>
+			<h1>Project lowest</h1>
 		</div>
 	</div>
 </header>
@@ -60,7 +66,6 @@
 			<div class="tsd-panel tsd-typography">
 				<p><strong>Lowest</strong></p>
 				<p>A library for functional data processing in TypeScript</p>
-				<p><a href="https://github.com/oren-hollander/lowest/blob/main/docs/README.md">Docs</a></p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -73,6 +78,42 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#anyobject" class="tsd-kind-icon">Any<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#collection" class="tsd-kind-icon">Collection</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#collectiontype" class="tsd-kind-icon">Collection<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#dictionary" class="tsd-kind-icon">Dictionary</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#func" class="tsd-kind-icon">Func</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#ll" class="tsd-kind-icon">LL</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#list" class="tsd-kind-icon">List</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#maybe" class="tsd-kind-icon">Maybe</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#pair" class="tsd-kind-icon">Pair</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#predicate" class="tsd-kind-icon">Predicate</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#dictionarytype" class="tsd-kind-icon">Dictionary<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#listtype" class="tsd-kind-icon">List<wbr>Type</a>
+					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="modules.html#assign" class="tsd-kind-icon">assign</a>
 					</li>
@@ -159,5 +200,6 @@
 </div>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>
