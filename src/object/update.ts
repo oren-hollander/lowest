@@ -1,5 +1,4 @@
-import type { Hx } from './transform'
-import { AnyObject } from './types'
+import { AnyObject, Hx } from '../types'
 
 const updateImpl = <T extends AnyObject, K extends keyof T>(obj: T, key: K, f: Hx<T[K]>): T => ({
   ...obj,

@@ -1,4 +1,3 @@
-export { map } from './map'
-export { mapValues } from './mapValues'
+export { map } from './collection/map'
 export { flow } from './flow'
-export { update } from './update'
+export { update } from './object/update'

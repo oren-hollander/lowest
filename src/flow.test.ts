@@ -1,6 +1,6 @@
 import { flow, map, update } from '.'
 
-describe('chain', () => {
+describe('flow', () => {
   test('should apply all operations in the flow for array of numbers', () => {
     expect(
       flow(

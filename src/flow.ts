@@ -1,4 +1,4 @@
-import { Tx } from './transform'
+import { Tx } from './types'
 
 export function flow<T, TX1, TX2, TX3, TX4, TX5>(
   values: T,

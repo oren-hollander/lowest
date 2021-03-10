@@ -1,4 +1,4 @@
-import { Tx } from '../transform'
+import { Tx } from '../types'
 
 const chunkImpl = <T>(size: number, xs: T[]): T[][] => {
   if (size < 1) {
