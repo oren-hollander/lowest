@@ -11,13 +11,10 @@ export type Nilable<T> = T | Nil
 export type Dictionary<T = unknown> = {
   readonly [key: string]: T
 }
-
 /**
  * A read only array
  */
 export type List<T> = ReadonlyArray<T>
-
-export type LL<T> = ReadonlyArray<ReadonlyArray<T>>
 
 export type Collection<T> = Dictionary<T> | List<T>
 

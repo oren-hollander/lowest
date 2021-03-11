@@ -1,4 +1,6 @@
-import { List, LL, Fn } from '../types'
+import { List, Fn } from '../types'
+
+type LL<T> = List<List<T>>
 
 const chunkImpl = <T>(size: number, list: List<T>): LL<T> => {
   if (size < 1) {
