@@ -1,4 +1,5 @@
 export { update } from './update'
+export { get } from './get'
 export { assign } from './assign'
 export { pick } from './pick'
 export { omit } from './omit'
