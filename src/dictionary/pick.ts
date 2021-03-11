@@ -1,4 +1,4 @@
-import { Dictionary, Func } from '../types'
+import { Dictionary, Fn } from '../types'
 import { getPairKey } from '../util'
 import { filter, find } from '../collection'
 import { flow } from '../function'
@@ -16,11 +16,11 @@ const pickKeys = <T extends Dictionary<unknown>>(dict: T, keys: Keys<T>): Dictio
   )
 
 export function pick<T extends Dictionary<unknown>>(dict: T, keys: Keys<T>): Dictionary<unknown>
-export function pick<T extends Dictionary<unknown>>(keys: Keys<T>): Func<T, Dictionary<unknown>>
+export function pick<T extends Dictionary<unknown>>(keys: Keys<T>): Fn<T, Dictionary<unknown>>
 export function pick<T extends Dictionary<unknown>>(
   dict_keys: T | Keys<T>,
   keys?: Keys<T>
-): Dictionary<unknown> | Func<T, Dictionary<unknown>> {
+): Dictionary<unknown> | Fn<T, Dictionary<unknown>> {
   if (keys) {
     const dict = dict_keys as T
     return pickKeys(dict, keys)

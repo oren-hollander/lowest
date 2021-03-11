@@ -1,4 +1,4 @@
-import type { List, Dictionary, Func, Collection } from '../types'
+import type { List, Dictionary, Fn, Collection } from '../types'
 import { isList, transformDictionary } from '../util'
 
 type Map<I, O> = {
@@ -6,7 +6,7 @@ type Map<I, O> = {
   (list: List<I>): List<O>
 }
 
-const mapCollection = <I, O>(collection: Collection<I>, f: Func<I, O>): Collection<O> =>
+const mapCollection = <I, O>(collection: Collection<I>, f: Fn<I, O>): Collection<O> =>
   isList(collection)
     ? collection.map(f)
     : transformDictionary(collection, values => values.map(([key, value]) => [key, f(value)]))
@@ -19,7 +19,7 @@ const mapCollection = <I, O>(collection: Collection<I>, f: Func<I, O>): Collecti
  * @param f The transform function.
  * @return The transformed list
  */
-export function map<I, O>(list: List<I>, f: Func<I, O>): List<O>
+export function map<I, O>(list: List<I>, f: Fn<I, O>): List<O>
 
 /**
  * [[Dictionary]] map
@@ -29,7 +29,7 @@ export function map<I, O>(list: List<I>, f: Func<I, O>): List<O>
  * @param f The transform function.
  * @return The transformed dictionary
  */
-export function map<I, O>(dict: Dictionary<I>, f: Func<I, O>): Dictionary<O>
+export function map<I, O>(dict: Dictionary<I>, f: Fn<I, O>): Dictionary<O>
 
 /**
  * Curried [[Collection]] map
@@ -38,16 +38,16 @@ export function map<I, O>(dict: Dictionary<I>, f: Func<I, O>): Dictionary<O>
  * @param f The transform function.
  * @return The {@link Map} function that accepts the collection
  */
-export function map<I, O>(f: Func<I, O>): Map<I, O>
+export function map<I, O>(f: Fn<I, O>): Map<I, O>
 
 export function map<I, O>(
-  list_dict_f: Collection<I> | Func<I, O>,
-  f?: Func<I, O>
-): Collection<O> | Func<List<I>, List<O>> | Func<Dictionary<I>, Dictionary<O>> {
+  list_dict_f: Collection<I> | Fn<I, O>,
+  f?: Fn<I, O>
+): Collection<O> | Fn<List<I>, List<O>> | Fn<Dictionary<I>, Dictionary<O>> {
   if (f) {
     return mapCollection(list_dict_f as Collection<I>, f)
   } else {
-    const f = list_dict_f as Func<I, O>
+    const f = list_dict_f as Fn<I, O>
     return (collection: Collection<I>) => mapCollection(collection, f) as List<O> & Dictionary<O>
   }
 }

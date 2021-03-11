@@ -1,12 +1,12 @@
-import { Collection, Predicate, Func } from '../types'
+import { Collection, Predicate, Fn } from '../types'
 import { asList } from '../util'
 
 export function every<T>(collection: Collection<T>, p: Predicate<T>): boolean
-export function every<T>(p: Predicate<T>): Func<Collection<T>, boolean>
+export function every<T>(p: Predicate<T>): Fn<Collection<T>, boolean>
 export function every<T>(
   collection_p: Collection<T> | Predicate<T>,
   p?: Predicate<T>
-): boolean | Func<Collection<T>, boolean> {
+): boolean | Fn<Collection<T>, boolean> {
   if (p) {
     return asList(collection_p as Collection<T>).every(p)
   } else {

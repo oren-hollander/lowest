@@ -1,4 +1,4 @@
-import { List, LL, Func } from '../types'
+import { List, LL, Fn } from '../types'
 
 const chunkImpl = <T>(size: number, list: List<T>): LL<T> => {
   if (size < 1) {
@@ -15,8 +15,8 @@ const chunkImpl = <T>(size: number, list: List<T>): LL<T> => {
 }
 
 export function chunk<T>(list: List<T>, size: number): LL<T>
-export function chunk<T>(size: number): Func<List<T>, LL<T>>
-export function chunk<T>(list_size: List<T> | number, size?: number): LL<T> | Func<List<T>, LL<T>> {
+export function chunk<T>(size: number): Fn<List<T>, LL<T>>
+export function chunk<T>(list_size: List<T> | number, size?: number): LL<T> | Fn<List<T>, LL<T>> {
   if (size !== undefined) {
     const list = list_size as List<T>
     return chunkImpl(size, list)

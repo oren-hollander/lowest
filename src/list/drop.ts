@@ -1,4 +1,4 @@
-import { List, Func } from '../types'
+import { List, Fn } from '../types'
 
 const dropImpl = <T>(list: List<T>, size: number): List<T> => {
   if (size < 0) {
@@ -11,8 +11,8 @@ const dropImpl = <T>(list: List<T>, size: number): List<T> => {
 }
 
 export function drop<T>(list: List<T>, size: number): List<T>
-export function drop<T>(size: number): Func<List<T>>
-export function drop<T>(list_size: List<T> | number, size?: number): List<T> | Func<List<T>> {
+export function drop<T>(size: number): Fn<List<T>>
+export function drop<T>(list_size: List<T> | number, size?: number): List<T> | Fn<List<T>> {
   if (size !== undefined) {
     const list = list_size as List<T>
     return dropImpl(list, size)

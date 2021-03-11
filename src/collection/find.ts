@@ -1,4 +1,4 @@
-import { Collection, Dictionary, List, Maybe, Predicate, Func } from '../types'
+import { Collection, Dictionary, List, Maybe, Predicate, Fn } from '../types'
 import { isList } from '../util'
 import { values } from '../dictionary'
 
@@ -11,7 +11,7 @@ export function find<T>(p: Predicate<T>): (collection: Collection<T>) => Maybe<T
 export function find<T>(
   list_dict_p: Collection<T> | Predicate<T>,
   p?: Predicate<T>
-): Maybe<T> | Func<Collection<T>, Maybe<T>> {
+): Maybe<T> | Fn<Collection<T>, Maybe<T>> {
   if (p) {
     return filterCollection(list_dict_p as Collection<T>, p)
   } else {

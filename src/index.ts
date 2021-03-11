@@ -7,7 +7,7 @@ export {
   List,
   ListType,
   AnyObject,
-  Func,
+  Fn,
   Collection,
   Predicate,
   Dictionary,

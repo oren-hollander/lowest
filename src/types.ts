@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type AnyObject = Record<string, any>
 
-export type Func<I, O = I> = (i: I) => O
+export type Fn<I, O = I> = (i: I) => O
 
 export type Predicate<T> = (value: T) => boolean
 
