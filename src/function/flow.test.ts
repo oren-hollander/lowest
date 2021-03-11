@@ -18,14 +18,14 @@ describe('flow', () => {
       flow(
         [
           { a: 1, b: 'x' },
-          { a: 2, b: 'y' },
+          { a: 2, b: 'y' }
         ],
         map(update('a', x => x + 1)),
         map(update('b', x => `${x}-${x}`))
       )
     ).toEqual([
       { a: 2, b: 'x-x' },
-      { a: 3, b: 'y-y' },
+      { a: 3, b: 'y-y' }
     ])
   })
 

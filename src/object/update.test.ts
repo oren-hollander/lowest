@@ -11,7 +11,7 @@ describe('update', () => {
   beforeEach(() => {
     thing = {
       a: 1,
-      b: 'hello',
+      b: 'hello'
     }
   })
 

@@ -18,7 +18,7 @@ describe('sortBy', () => {
         { name: 'fred', age: 48 },
         { name: 'barney', age: 36 },
         { name: 'fred', age: 40 },
-        { name: 'barney', age: 34 },
+        { name: 'barney', age: 34 }
       ]
     })
 
@@ -27,7 +27,7 @@ describe('sortBy', () => {
         { name: 'barney', age: 36 },
         { name: 'barney', age: 34 },
         { name: 'fred', age: 48 },
-        { name: 'fred', age: 40 },
+        { name: 'fred', age: 40 }
       ])
     })
 
@@ -36,7 +36,7 @@ describe('sortBy', () => {
         { name: 'barney', age: 34 },
         { name: 'barney', age: 36 },
         { name: 'fred', age: 40 },
-        { name: 'fred', age: 48 },
+        { name: 'fred', age: 48 }
       ])
     })
   })

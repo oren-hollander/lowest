@@ -5,9 +5,10 @@ export type Fn<I, O = I> = (i: I) => O
 
 export type Predicate<T> = (value: T) => boolean
 
-export type Nilable<T> = T | undefined | null
+type Nil = undefined | null
+export type Nilable<T> = T | Nil
 
-export type Dictionary<T> = {
+export type Dictionary<T = unknown> = {
   readonly [key: string]: T
 }
 

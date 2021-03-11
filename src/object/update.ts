@@ -2,7 +2,7 @@ import { AnyObject, Fn } from '../types'
 
 const updateObject = <T extends AnyObject, K extends keyof T>(obj: T, key: K, f: Fn<T[K]>): T => ({
   ...obj,
-  [key]: f(obj[key]),
+  [key]: f(obj[key])
 })
 
 export function update<T extends AnyObject, K extends keyof T>(obj: T, key: K, f: Fn<T[K]>): T

@@ -17,7 +17,7 @@ describe('chunk', () => {
     test('should chunk an list with a last complete chunk', () => {
       expect(chunk([1, 2, 3, 4], 2)).toEqual([
         [1, 2],
-        [3, 4],
+        [3, 4]
       ])
     })
   })
@@ -38,7 +38,7 @@ describe('chunk', () => {
     test('should chunk an list with a last complete chunk', () => {
       expect(chunk(2)([1, 2, 3, 4])).toEqual([
         [1, 2],
-        [3, 4],
+        [3, 4]
       ])
     })
   })
