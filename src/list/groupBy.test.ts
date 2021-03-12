@@ -1,7 +1,7 @@
 import { groupBy } from './groupBy'
 
 describe('groupBy', () => {
-  test('should return the first element', () => {
+  test('should group numbers', () => {
     expect(groupBy([6.1, 4.2, 6.3], x => `${Math.floor(x)}`)).toEqual({ '4': [4.2], '6': [6.1, 6.3] })
   })
 
