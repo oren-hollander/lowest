@@ -1,5 +1,5 @@
 import { Collection, Dictionary, List, Predicate, Fn } from '../types'
-import { getPairValue, isList, transformDictionary } from '../util'
+import { isList, overPairValues, transformDictionary } from '../util'
 
 type Filter<T> = {
   (dict: Dictionary<T>): Dictionary<T>
@@ -9,7 +9,7 @@ type Filter<T> = {
 const filterCollection = <T>(collection: Collection<T>, p: Predicate<T>): Collection<T> =>
   isList(collection)
     ? collection.filter(p)
-    : transformDictionary(collection, values => values.filter(pair => p(getPairValue(pair))))
+    : transformDictionary(collection, values => values.filter(overPairValues(p)))
 
 export function filter<T>(list: List<T>, p: Predicate<T>): List<T>
 export function filter<T>(dict: Dictionary<T>, p: Predicate<T>): Dictionary<T>

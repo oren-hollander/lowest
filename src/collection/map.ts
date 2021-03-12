@@ -1,5 +1,5 @@
 import type { List, Dictionary, Fn, Collection } from '../types'
-import { isList, transformDictionary } from '../util'
+import { isList, overPairs, transformDictionary } from '../util'
 
 type Map<I, O> = {
   (dict: Dictionary<I>): Dictionary<O>
@@ -7,9 +7,7 @@ type Map<I, O> = {
 }
 
 const mapCollection = <I, O>(collection: Collection<I>, f: Fn<I, O>): Collection<O> =>
-  isList(collection)
-    ? collection.map(f)
-    : transformDictionary(collection, values => values.map(([key, value]) => [key, f(value)]))
+  isList(collection) ? collection.map(f) : transformDictionary(collection, values => values.map(overPairs(f)))
 
 /**
  * * [[List]] map
