@@ -16,7 +16,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "docs": "rimraf docs && typedoc",
     "build": "npm run format && npm run lint && tsc",
-    "test": "tsc --project ./tsconfig.test.json && jest --watch",
+    "test": "tsc --project ./tsconfig.test.json && jest",
     "prepare": "rimraf dist && npm run build",
     "prepublishOnly": "jest && npm run lint",
     "preversion": "npm run lint",
