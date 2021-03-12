@@ -25,3 +25,36 @@ export function filter<T>(
     return (collection: Collection<T>) => filterCollection(collection, p) as List<T> & Dictionary<T>
   }
 }
+
+/**
+ * Filters the collection by keeping all items which satisfy the predicate
+ * @param p The [[Predicate]]
+ * @return A function accepting the [[Collection]] to filter
+ *
+ * The returned function returns the same type it accepts
+ * Example:
+ *
+ * ```typescript
+ * const predicate = (x: number): boolean => x > 1
+ * const moreThanOne = filter(predicate)
+ *
+ * const list: List<number> = [1, 2, 3]
+ * const r1 = moreThanOne(list)
+ *
+ * const dict: Dictionary<number> = { a: 1, b: 2, c: 3 }
+ * const r2 = moreThanOne(dict)
+ *
+ * const listCol = [1, 2, 3] as Collection<number>
+ * const r3 = moreThanOne(listCol)
+ *
+ * const dictCol = { a: 1, b: 2, c: 3 } as Collection<number>
+ * const r4 = moreThanOne(dictCol)
+ * ```
+ *
+ * Variable          | Static type  | Dynamic type
+ * ----------------- | ------------ | ------------
+ * list <br/> r1     | List         | List
+ * dict <br/> r2     | Dictionary   | Dictionary
+ * listCol <br/> r3  | Collection   | List
+ * dictCol <br/> r4  | Collection   | Dictionary
+ */

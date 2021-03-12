@@ -1,4 +1,15 @@
-import { Collection, CollectionType, Dictionary, DictionaryType, List, ListType, Pair, Fn } from './types'
+import {
+  Collection,
+  CollectionType,
+  Dictionary,
+  DictionaryType,
+  List,
+  ListType,
+  Pair,
+  Fn,
+  AnyObject,
+  ObjectPair
+} from './types'
 import { values } from './dictionary'
 
 export const transformDictionary = <I, O>(
@@ -21,3 +32,5 @@ export const asList = <T>(collection: Collection<T>): List<T> => (isList(collect
 
 export const getPairKey = ([key]: Pair<unknown>): string => key
 export const getPairValue = <T>([, value]: Pair<T>): T => value
+
+export const getObjectPairKey = <T extends AnyObject>([key]: ObjectPair<T>): keyof T => key

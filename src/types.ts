@@ -43,4 +43,6 @@ export const DictionaryType = Symbol('dictionary')
 export type CollectionType = typeof ListType | typeof DictionaryType
 
 export type Pair<T> = [string, T]
+export type ObjectPair<T extends AnyObject> = [keyof T, T]
+
 export type Tuple<L, R> = [L, R]
