@@ -33,15 +33,10 @@ export type Dictionary<T> = {
  */
 export type Collection<T> = Dictionary<T> | List<T>
 
-// export const ListType = Symbol('list')
-// export const DictionaryType = Symbol('dictionary')
-
 /**
  * Either a collection or a list
  */
-// export type CollectionType = typeof ListType | typeof DictionaryType
 
 export type Pair<T> = [string, T]
-// export type Pair<T extends AnyObject> = [keyof T, T]
 
 export type Tuple<L, R> = [L, R]

@@ -1,6 +1,7 @@
 import { Dictionary, Pair, Fn, Collection } from './types'
 import { List } from './list'
 import { values } from './dictionary'
+
 export const transformDictionary = <I, O>(
   dict: Dictionary<I>,
   tx: Fn<ReadonlyArray<Pair<I>>, ReadonlyArray<Pair<O>>>
@@ -18,5 +19,3 @@ export const asList = <T>(collection: Collection<T>): List<T> => (isList(collect
 
 export const getPairKey = ([key]: Pair<unknown>): string => key
 export const getPairValue = <T>([, value]: Pair<T>): T => value
-
-// export const getObjectPairKey = <T extends AnyObject>([key]: ObjectPair<T>): keyof T => key

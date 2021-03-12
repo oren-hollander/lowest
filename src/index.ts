@@ -1,6 +1,6 @@
 export * from './collection'
+export * from './list'
 export * from './dictionary'
-// export * from './list'
 export * from './object'
 export * from './function'
 export * from './types'
