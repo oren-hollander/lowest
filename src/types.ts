@@ -24,5 +24,5 @@ export const DictionaryType = Symbol('dictionary')
 export type CollectionType = typeof ListType | typeof DictionaryType
 
 export type Pair<T> = [string, T]
-
+export type Tuple<L, R> = [L, R]
 export type Maybe<T> = T | undefined

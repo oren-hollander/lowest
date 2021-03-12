@@ -1,7 +1,6 @@
-import { Fn, List } from '../types'
+import { Fn, List, Tuple } from '../types'
 import { zip as _zip, isUndefined } from 'lodash'
 
-type Tuple<L, R> = [L, R]
 type OptionalTuple<L, R> = Tuple<L | undefined, R | undefined>
 
 export function zip<L, R>(left: List<L>, right: List<R>, iaSizeEqual: true): List<Tuple<L, R>>
