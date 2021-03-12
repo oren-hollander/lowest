@@ -2,5 +2,7 @@
   "entryPoints": ["src/index.ts"],
   "out": "docs",
   "readme": "./README.md",
-  "theme": "./node_modules/typedoc-theme-dark/dist/dark/"
+  "theme": "./node_modules/typedoc-theme-dark/dist/dark/",
+  "exclude": ["**/node_modules/**"],
+  "excludeNotDocumented": true
 }
