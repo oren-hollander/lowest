@@ -4,6 +4,5 @@
   "readme": "./README.md",
   "theme": "./node_modules/typedoc-theme-dark/dist/dark/",
   "excludeExternals": true,
-  "exclude": ["**/node_modules/**"],
-  "excludeNotDocumented": false
+  "exclude": ["**/node_modules/**"]
 }
