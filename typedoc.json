@@ -1,8 +1,7 @@
 {
-  "entryPoints": ["src/list/zip.ts"],
+  "entryPoints": ["src/index.ts"],
   "out": "docs",
   "readme": "./README.md",
   "theme": "./node_modules/typedoc-theme-dark/dist/dark/",
-  "excludeExternals": true,
   "exclude": ["**/node_modules/**"]
 }
