@@ -1,6 +1,3 @@
-export { compact } from './compact'
-export { map } from './map'
-export { filter } from './filter'
-export { find } from './find'
 export { every } from './every'
+export { find } from './find'
 export { some } from './some'

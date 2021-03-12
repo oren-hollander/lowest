@@ -1,29 +1,27 @@
-import { List, Fn } from '../types'
+import { Fn } from '../types'
+import { List } from './list'
+import { curry2 } from '../curry'
 
 type LL<T> = List<List<T>>
 
-const chunkImpl = <T>(size: number, list: List<T>): LL<T> => {
-  if (size < 1) {
-    throw new Error('Chunk size must be a positive number')
-  }
+const chunkImpl = curry2(
+  <T>(list: List<T>, size: number): LL<T> => {
+    if (size < 1) {
+      throw new Error('Chunk size must be a positive number')
+    }
 
-  const result: T[][] = []
-  let remaining: List<T> = list
-  while (remaining.length > 0) {
-    result.push(remaining.slice(0, size))
-    remaining = remaining.slice(size)
+    const result: T[][] = []
+    let remaining: List<T> = list
+    while (remaining.length > 0) {
+      result.push(remaining.slice(0, size))
+      remaining = remaining.slice(size)
+    }
+    return result
   }
-  return result
-}
+)
 
 export function chunk<T>(list: List<T>, size: number): LL<T>
 export function chunk<T>(size: number): Fn<List<T>, LL<T>>
 export function chunk<T>(list_size: List<T> | number, size?: number): LL<T> | Fn<List<T>, LL<T>> {
-  if (size !== undefined) {
-    const list = list_size as List<T>
-    return chunkImpl(size, list)
-  } else {
-    const size = list_size as number
-    return (list: List<T>): LL<T> => chunkImpl(size, list)
-  }
+  return chunkImpl(list_size, size)
 }

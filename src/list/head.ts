@@ -1,5 +1,5 @@
-import { List } from '../types'
 import { take } from './take'
+import { List } from './list'
 
 export const head = <T>(list: List<T>): T => {
   if (list.length === 0) {

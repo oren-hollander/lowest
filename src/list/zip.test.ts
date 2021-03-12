@@ -17,7 +17,7 @@ describe('zip', () => {
   })
 
   test('curried version should zip two lists', () => {
-    expect(zip([1, 2, 3])(['a', 'b', 'c'])).toEqual([
+    expect(zip(['a', 'b', 'c'])([1, 2, 3])).toEqual([
       [1, 'a'],
       [2, 'b'],
       [3, 'c']

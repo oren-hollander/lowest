@@ -33,7 +33,7 @@ describe('concat', () => {
     })
 
     test('should concat two lists', () => {
-      expect(concat([1, 2])([3])).toEqual([1, 2, 3])
+      expect(concat([3])([1, 2])).toEqual([1, 2, 3])
     })
   })
 })

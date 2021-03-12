@@ -1,28 +1,14 @@
 import { sortBy as _sortBy } from 'lodash'
-
-import { Collection, Dictionary, List, Fn } from '../types'
-
-type SortBy<T> = {
-  (dict: Dictionary<T>): Dictionary<T>
-  (list: List<T>): List<T>
-}
+import { Fn } from '../types'
+import { List } from './list'
+import { curry2 } from '../curry'
 
 type SortValue<T> = Fn<T, unknown | List<unknown>>
 
-const sortCollectionBy = <T>(collection: Collection<T>, sortValue: SortValue<T>): Collection<T> =>
-  _sortBy(collection, sortValue) as Collection<T>
+const sortByImpl = curry2(<T>(list: List<T>, sortValue: SortValue<T>): List<T> => _sortBy(list, sortValue))
 
-export function sortBy<T>(list: List<T>, tx: SortValue<T>): List<T>
-export function sortBy<T>(dict: Dictionary<T>, tx: SortValue<T>): Dictionary<T>
-export function sortBy<T>(sortValue: SortValue<T>): SortBy<T>
-export function sortBy<T>(
-  collection_sortValue: Collection<T> | SortValue<T>,
-  sortValue?: SortValue<T>
-): Collection<T> | Fn<Collection<T>> {
-  if (sortValue) {
-    return sortCollectionBy(collection_sortValue as Collection<T>, sortValue)
-  } else {
-    const sortValue = collection_sortValue as SortValue<T>
-    return (collection: Collection<T>) => sortCollectionBy(collection, sortValue)
-  }
+export function sortBy<T>(list: List<T>, by: SortValue<T>): List<T>
+export function sortBy<T>(sortValue: SortValue<T>): Fn<List<T>>
+export function sortBy<T>(list_sortValue: List<T> | SortValue<T>, sortValue?: SortValue<T>): List<T> | Fn<List<T>> {
+  return sortByImpl(list_sortValue, sortValue)
 }

@@ -1,7 +1,11 @@
+import { List } from './list'
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type AnyObject<T = any> = Record<string, T>
 
 export type Fn<I, O = I> = (i: I) => O
+export type Fn2<A, B, R> = (a: A, b: B) => R
+export type Fn3<A, B, C, R> = (a: A, b: B, c: C) => R
 
 export type Predicate<T> = (value: T) => boolean
 
@@ -20,29 +24,24 @@ export type Nilable<T> = T | Nil
 /**
  * A read only dictionary
  */
-export type Dictionary<T = unknown> = {
+export type Dictionary<T> = {
   readonly [key: string]: T
 }
-
-/**
- * A read only array
- */
-export type List<T> = ReadonlyArray<T>
 
 /**
  * A read only [[List]] or [[Dictionary]]
  */
 export type Collection<T> = Dictionary<T> | List<T>
 
-export const ListType = Symbol('list')
-export const DictionaryType = Symbol('dictionary')
+// export const ListType = Symbol('list')
+// export const DictionaryType = Symbol('dictionary')
 
 /**
  * Either a collection or a list
  */
-export type CollectionType = typeof ListType | typeof DictionaryType
+// export type CollectionType = typeof ListType | typeof DictionaryType
 
 export type Pair<T> = [string, T]
-export type ObjectPair<T extends AnyObject> = [keyof T, T]
+// export type Pair<T extends AnyObject> = [keyof T, T]
 
 export type Tuple<L, R> = [L, R]

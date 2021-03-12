@@ -1,4 +1,5 @@
-import { flow, map, update } from '../index'
+import { flow, update } from '../index'
+import { map } from '../list'
 
 describe('flow', () => {
   test('should apply all operations in the flow for list of numbers', () => {

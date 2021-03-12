@@ -1,9 +1,12 @@
 import { AnyObject, Fn } from '../types'
+import { curry3 } from '../curry'
 
-const setValue = <T extends AnyObject, K extends keyof T>(obj: T, key: K, value: T[K]): T => ({
-  ...obj,
-  [key]: value
-})
+const setImpl = curry3(
+  <T extends AnyObject, K extends keyof T>(obj: T, key: K, value: T[K]): T => ({
+    ...obj,
+    [key]: value
+  })
+)
 
 export function set<T extends AnyObject, K extends keyof T>(obj: T, key: K, value: T[K]): T
 export function set<T extends AnyObject, K extends keyof T>(key: K, value: T[K]): Fn<T>
@@ -12,13 +15,5 @@ export function set<T extends AnyObject, K extends keyof T>(
   key_value: K | T[K],
   value?: T[K]
 ): T | Fn<T> {
-  if (value) {
-    const obj = obj_key as T
-    const key = key_value as K
-    return setValue(obj, key, value)
-  } else {
-    const key = obj_key as K
-    const value = key_value as T[K]
-    return (obj: T): T => setValue(obj, key, value)
-  }
+  return setImpl(obj_key, key_value, value)
 }
