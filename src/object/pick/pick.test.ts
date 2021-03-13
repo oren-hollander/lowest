@@ -1,4 +1,4 @@
-import { pick } from './pick'
+import { pick } from '.'
 
 describe('keys', () => {
   test('should pick nothing from an empty dictionary', () => {

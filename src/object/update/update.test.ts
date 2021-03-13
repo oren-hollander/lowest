@@ -1,4 +1,4 @@
-import { update } from './update'
+import { update } from '.'
 
 interface Thing {
   a: number

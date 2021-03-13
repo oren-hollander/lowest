@@ -1,4 +1,4 @@
-import { assign } from './assign'
+import { assign } from '.'
 
 describe('assign', () => {
   describe('non curried overload', () => {

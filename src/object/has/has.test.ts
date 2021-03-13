@@ -1,5 +1,5 @@
-import { has } from './has'
-import { Dictionary } from '../dictionary'
+import { has } from '.'
+import { Dictionary } from '../../dictionary'
 
 interface Thing {
   a: number

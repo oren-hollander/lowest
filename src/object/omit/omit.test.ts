@@ -1,4 +1,4 @@
-import { omit } from './omit'
+import { omit } from '.'
 
 describe('omit', () => {
   test('should omit nothing from an empty dictionary', () => {

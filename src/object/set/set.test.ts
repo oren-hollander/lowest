@@ -1,4 +1,4 @@
-import { set } from './set'
+import { set } from '.'
 
 interface Thing {
   a: number
