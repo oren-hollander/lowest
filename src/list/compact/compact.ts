@@ -1,8 +1,6 @@
 import { filter } from '../filter/filter'
 import { List } from '../list'
-import { Nilable } from '../../util/util'
-
-const isNotNil = (value: unknown): boolean => value !== null && value !== undefined
+import { isNotNil, Nilable } from '../../util/util'
 
 /**
  * Returns a list with null or undefined values removed

@@ -2,7 +2,7 @@ import { List } from '../list'
 import { Fn } from '../../function'
 import { SortValue } from './sortBy'
 import { sortBy } from './sortBy'
-import { curry2 } from '../../util/curry'
+import { curry2 } from '../../util/util'
 
 const curried = curry2(sortBy)
 

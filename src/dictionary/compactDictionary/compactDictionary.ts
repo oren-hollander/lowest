@@ -1,7 +1,5 @@
-import { Nilable } from '../../util/util'
-import { Dictionary, overEntryValues, transformDictionary } from '../dictionary'
-
-const isNotNil = (value: unknown): boolean => value !== null && value !== undefined
+import { isNotNil, Nilable } from '../../util/util'
+import { Dictionary, overEntryValue, transformDictionary } from '../dictionary'
 
 /**
  * Removes null or undefined values from the dictionary
@@ -9,4 +7,4 @@ const isNotNil = (value: unknown): boolean => value !== null && value !== undefi
  * @return A collection without null or undefined values
  */
 export const compactDictionary = <T>(dict: Dictionary<Nilable<T>>): Dictionary<T> =>
-  transformDictionary(dict, values => values.filter(overEntryValues(isNotNil))) as Dictionary<T>
+  transformDictionary(dict, values => values.filter(overEntryValue(isNotNil))) as Dictionary<T>

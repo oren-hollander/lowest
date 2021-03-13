@@ -1,8 +1,8 @@
 import { Fn } from '../../function'
-import { List } from '../list'
+import { Key, List } from '../list'
 import { Dictionary } from '../../dictionary'
-import { Key, keyBy } from './keyBy'
-import { curry2 } from '../../util/curry'
+import { keyBy } from './keyBy'
+import { curry2 } from '../../util/util'
 
 const curried = curry2(keyBy)
 

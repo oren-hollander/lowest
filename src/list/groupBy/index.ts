@@ -1,7 +1,7 @@
-import { List } from '../list'
+import { Key, List } from '../list'
 import { Fn } from '../../function'
-import { groupBy, Grouped, Key } from './groupBy'
-import { curry2 } from '../../util/curry'
+import { groupBy, Grouped } from './groupBy'
+import { curry2 } from '../../util/util'
 
 const curried = curry2(groupBy)
 

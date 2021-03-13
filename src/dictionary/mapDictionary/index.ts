@@ -1,7 +1,7 @@
 import { Dictionary } from '../dictionary'
 import { Fn } from '../../function'
 import { mapDictionary } from './mapDictionary'
-import { curry2 } from '../../util/curry'
+import { curry2 } from '../../util/util'
 
 const curried = curry2(mapDictionary)
 

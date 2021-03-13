@@ -1,7 +1,7 @@
 import { AnyObject } from '../object'
 import { Fn } from '../../function'
-import { curry2 } from '../../util/curry'
 import { has } from './has'
+import { curry2 } from '../../util/util'
 
 const curried = curry2(has)
 

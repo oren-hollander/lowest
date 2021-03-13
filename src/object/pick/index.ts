@@ -1,8 +1,8 @@
 import { AnyObject } from '../object'
 import { List } from '../../list'
 import { Fn } from '../../function'
-import { curry2 } from '../../util/curry'
 import { pick } from './pick'
+import { curry2 } from '../../util/util'
 
 const curried = curry2(pick)
 

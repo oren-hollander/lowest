@@ -1,7 +1,7 @@
 import { List, Tuple } from '../list'
 import { Fn } from '../../function'
-import { curry2 } from '../../util/curry'
 import { zip } from './zip'
+import { curry2 } from '../../util/util'
 
 const curried = curry2(zip)
 

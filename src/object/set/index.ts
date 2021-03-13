@@ -1,7 +1,7 @@
 import { AnyObject } from '../object'
 import { Fn } from '../../function'
-import { curry3 } from '../../util/curry'
 import { set } from './set'
+import { curry3 } from '../../util/util'
 
 const curried = curry3(set)
 

@@ -1,7 +1,7 @@
 import { List } from '../list'
 import { Fn, Predicate } from '../../function'
 import { filter } from './filter'
-import { curry2 } from '../../util/curry'
+import { curry2 } from '../../util/util'
 
 const curried = curry2(filter)
 

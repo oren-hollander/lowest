@@ -1,7 +1,7 @@
 import { List } from '../list'
 import { Fn } from '../../function'
 import { map } from './map'
-import { curry2 } from '../../util/curry'
+import { curry2 } from '../../util/util'
 
 const curried = curry2(map)
 /**

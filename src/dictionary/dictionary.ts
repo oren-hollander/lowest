@@ -22,9 +22,9 @@ export const transformDictionary = <I, O>(
   tx: Fn<ReadonlyArray<Entry<I>>, ReadonlyArray<Entry<O>>>
 ): Dictionary<O> => Object.fromEntries(tx(Object.entries(dict)))
 
-export const overEntryValues = <I, O>(f: Fn<I, O>): Fn<Entry<I>, O> => ([, value]: Entry<I>): O => f(value)
+export const overEntryValue = <I, O>(f: Fn<I, O>): Fn<Entry<I>, O> => ([, value]: Entry<I>): O => f(value)
 
-export const overEntries = <I, O>(f: Fn<I, O>): Fn<Entry<I>, Entry<O>> => ([key, value]: Entry<I>): Entry<O> => [
+export const overEntry = <I, O>(f: Fn<I, O>): Fn<Entry<I>, Entry<O>> => ([key, value]: Entry<I>): Entry<O> => [
   key,
   f(value)
 ]

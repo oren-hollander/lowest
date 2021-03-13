@@ -1,7 +1,7 @@
 import { Collection } from '../collection'
 import { Fn, Predicate } from '../../function'
 import { every } from './every'
-import { curry2 } from '../../util/curry'
+import { curry2 } from '../../util/util'
 
 const curried = curry2(every)
 
