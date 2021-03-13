@@ -1,7 +1,11 @@
 import { toPairs } from '../toPairs'
 import { flow } from '../../function'
 import { map, List } from '../../list'
-import { getPairKey } from '../../util/util'
-import { Dictionary } from '../dictionary'
+import { Dictionary, getEntryKey } from '../dictionary'
 
-export const keys = (dict: Dictionary<unknown>): List<string> => flow(dict, toPairs, map(getPairKey))
+/**
+ * Returns the keys of the dictionary
+ * @param dict A dictionary
+ * @return a list of keys
+ */
+export const keys = (dict: Dictionary<unknown>): List<string> => flow(dict, toPairs, map(getEntryKey))

@@ -1,7 +1,6 @@
-import { getPairKey } from '../util/util'
 import { find } from '../collection'
 import { flow, Fn } from '../function'
-import { fromPairs, toPairs } from '../dictionary'
+import { fromPairs, getEntryKey, toPairs } from '../dictionary'
 import { List, filter } from '../list'
 import { curry2 } from '../util/curry'
 import { AnyObject } from './object'
@@ -11,7 +10,7 @@ const omitImpl = curry2(
     flow(
       obj,
       toPairs,
-      filter(pair => find(keys, key => key === getPairKey(pair)) === undefined),
+      filter(pair => find(keys, key => key === getEntryKey(pair)) === undefined),
       fromPairs
     ) as Omit<T, K>
 )

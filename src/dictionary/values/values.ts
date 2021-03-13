@@ -1,7 +1,12 @@
 import { toPairs } from '../toPairs'
 import { flow } from '../../function'
-import { getPairValue } from '../../util/util'
 import { List, map } from '../../list'
-import { Dictionary } from '../dictionary'
+import { Dictionary, getEntryValue } from '../dictionary'
 
-export const values = <T>(dict: Dictionary<T>): List<T> => flow(dict, toPairs, map(getPairValue))
+/**
+ * Returns the values of a dictionary
+ * @template T The type of the dictionary item
+ * @param dict A dictionary
+ * @return A list of the dictionary values
+ */
+export const values = <T>(dict: Dictionary<T>): List<T> => flow(dict, toPairs, map(getEntryValue))

@@ -73,12 +73,12 @@
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#anyobject" class="tsd-kind-icon">Any<wbr>Object</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#collection" class="tsd-kind-icon">Collection</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#dictionary" class="tsd-kind-icon">Dictionary</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#entry" class="tsd-kind-icon">Entry</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#fn" class="tsd-kind-icon">Fn</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#fn2" class="tsd-kind-icon">Fn2</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#fn3" class="tsd-kind-icon">Fn3</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#list" class="tsd-kind-icon">List</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#maybe" class="tsd-kind-icon">Maybe</a></li>
-								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#pair" class="tsd-kind-icon">Pair</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#predicate" class="tsd-kind-icon">Predicate</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#tuple" class="tsd-kind-icon">Tuple</a></li>
 							</ul>
@@ -100,6 +100,8 @@
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#flow" class="tsd-kind-icon">flow</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#frompairs" class="tsd-kind-icon">from<wbr>Pairs</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#getentrykey" class="tsd-kind-icon">get<wbr>Entry<wbr>Key</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#getentryvalue" class="tsd-kind-icon">get<wbr>Entry<wbr>Value</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#groupby" class="tsd-kind-icon">group<wbr>By</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#has" class="tsd-kind-icon">has</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#head" class="tsd-kind-icon">head</a></li>
@@ -110,6 +112,8 @@
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#map" class="tsd-kind-icon">map</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#mapdictionary" class="tsd-kind-icon">map<wbr>Dictionary</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#omit" class="tsd-kind-icon">omit</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#overentries" class="tsd-kind-icon">over<wbr>Entries</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#overentryvalues" class="tsd-kind-icon">over<wbr>Entry<wbr>Values</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#pick" class="tsd-kind-icon">pick</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#set" class="tsd-kind-icon">set</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#some" class="tsd-kind-icon">some</a></li>
@@ -117,6 +121,7 @@
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#tail" class="tsd-kind-icon">tail</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#take" class="tsd-kind-icon">take</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#topairs" class="tsd-kind-icon">to<wbr>Pairs</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#transformdictionary" class="tsd-kind-icon">transform<wbr>Dictionary</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#uniq" class="tsd-kind-icon">uniq</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#unzip" class="tsd-kind-icon">unzip</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#update" class="tsd-kind-icon">update</a></li>
@@ -136,7 +141,7 @@
 					<div class="tsd-signature tsd-kind-icon">Any<wbr>Object&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/object/object.ts#L2">object/object.ts:2</a></li>
+							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/object/object.ts#L2">object/object.ts:2</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -152,7 +157,7 @@
 					<div class="tsd-signature tsd-kind-icon">Collection&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">List</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/collection/collection.ts#L7">collection/collection.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/collection/collection.ts#L7">collection/collection.ts:7</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -173,14 +178,9 @@
 					<div class="tsd-signature tsd-kind-icon">Dictionary&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/dictionary/dictionary.ts#L4">dictionary/dictionary.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/dictionary/dictionary.ts#L3">dictionary/dictionary.ts:3</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A read only dictionary</p>
-						</div>
-					</div>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
 					<ul class="tsd-type-parameters">
 						<li>
@@ -197,12 +197,33 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="entry" class="tsd-anchor"></a>
+					<h3>Entry</h3>
+					<div class="tsd-signature tsd-kind-icon">Entry&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/dictionary/dictionary.ts#L10">dictionary/dictionary.ts:10</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A key and value pair - a dictionary entry</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
 					<a name="fn" class="tsd-anchor"></a>
 					<h3>Fn</h3>
 					<div class="tsd-signature tsd-kind-icon">Fn&lt;I, O&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>i<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">O</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/function/function.ts#L1">function/function.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/function/function.ts#L1">function/function.ts:1</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -242,7 +263,7 @@
 					<div class="tsd-signature tsd-kind-icon">Fn2&lt;A, B, R&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">A</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">R</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/function/function.ts#L2">function/function.ts:2</a></li>
+							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/function/function.ts#L2">function/function.ts:2</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -288,7 +309,7 @@
 					<div class="tsd-signature tsd-kind-icon">Fn3&lt;A, B, C, R&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">A</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">B</span>, c<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">R</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/function/function.ts#L3">function/function.ts:3</a></li>
+							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/function/function.ts#L3">function/function.ts:3</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -340,7 +361,7 @@
 					<div class="tsd-signature tsd-kind-icon">List&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/list.ts#L4">list/list.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/list.ts#L4">list/list.ts:4</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -356,7 +377,7 @@
 					<div class="tsd-signature tsd-kind-icon">Maybe&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/util/types.ts#L4">util/types.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/util/types.ts#L4">util/types.ts:4</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -372,33 +393,12 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
-					<a name="pair" class="tsd-anchor"></a>
-					<h3>Pair</h3>
-					<div class="tsd-signature tsd-kind-icon">Pair&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/dictionary/dictionary.ts#L11">dictionary/dictionary.ts:11</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A key and value pair - a dictionary entry</p>
-						</div>
-					</div>
-					<h4 class="tsd-type-parameters-title">Type parameters</h4>
-					<ul class="tsd-type-parameters">
-						<li>
-							<h4>T</h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
 					<a name="predicate" class="tsd-anchor"></a>
 					<h3>Predicate</h3>
 					<div class="tsd-signature tsd-kind-icon">Predicate&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/function/function.ts#L5">function/function.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/function/function.ts#L5">function/function.ts:5</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -435,7 +435,7 @@
 					<div class="tsd-signature tsd-kind-icon">Tuple&lt;L, R&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">L</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/list.ts#L6">list/list.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/list.ts#L6">list/list.ts:6</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -462,7 +462,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/object/assign.ts#L7">object/assign.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/object/assign.ts#L7">object/assign.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -488,7 +488,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/object/assign.ts#L8">object/assign.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/object/assign.ts#L8">object/assign.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -521,7 +521,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/chunk.ts#L23">list/chunk.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/chunk.ts#L23">list/chunk.ts:23</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -544,7 +544,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/chunk.ts#L24">list/chunk.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/chunk.ts#L24">list/chunk.ts:24</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -573,7 +573,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/compact.ts#L12">list/compact.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/compact.ts#L12">list/compact.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -611,7 +611,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/dictionary/compactDictionary/compactDictionary.ts#L11">dictionary/compactDictionary/compactDictionary.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/dictionary/compactDictionary/compactDictionary.ts#L11">dictionary/compactDictionary/compactDictionary.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -650,7 +650,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/concat.ts#L7">list/concat.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/concat.ts#L7">list/concat.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -673,7 +673,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/concat.ts#L8">list/concat.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/concat.ts#L8">list/concat.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -703,7 +703,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/drop.ts#L17">list/drop.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/drop.ts#L17">list/drop.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -726,7 +726,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/drop.ts#L18">list/drop.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/drop.ts#L18">list/drop.ts:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -756,18 +756,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/collection/every/index.ts#L13">collection/every/index.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/collection/every/index.ts#L15">collection/every/index.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Check if every item in this collection passes the predicate check</p>
+									<p>Check if every item in this collection satisfies a predicate</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
 									<h4>T</h4>
+									<div class="tsd-comment tsd-typography">
+										<p>The <a href="modules.html#collection">Collection</a> item type</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -775,37 +778,50 @@
 								<li>
 									<h5>col: <a href="modules.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The <a href="modules.html#collection">Collection</a> to check</p>
+										<p>A <a href="modules.html#collection">Collection</a> to check</p>
 									</div>
 								</li>
 								<li>
 									<h5>p: <a href="modules.html#predicate" class="tsd-signature-type">Predicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The <a href="modules.html#predicate">Predicate</a></p>
+										<p>A <a href="modules.html#predicate">Predicate</a></p>
 									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true if every item in this collection satisfies the predicate and false otherwise</p>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/collection/every/index.ts#L14">collection/every/index.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/collection/every/index.ts#L23">collection/every/index.ts:23</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if every item in this collection satisfies a predicate</p>
+								</div>
+							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
 									<h4>T</h4>
+									<div class="tsd-comment tsd-typography">
+										<p>The <a href="modules.html#collection">Collection</a> item type</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>p: <a href="modules.html#predicate" class="tsd-signature-type">Predicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A <a href="modules.html#predicate">Predicate</a></p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#fn" class="tsd-signature-type">Fn</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A function accepting a collection and returning true if every item in this collection satisfies predicate and false otherwise</p>
 						</li>
 					</ul>
 				</section>
@@ -820,7 +836,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/filter.ts#L13">list/filter.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/filter.ts#L13">list/filter.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -855,7 +871,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/filter.ts#L14">list/filter.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/filter.ts#L14">list/filter.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -885,12 +901,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/dictionary/filterDictionary/index.ts#L14">dictionary/filterDictionary/index.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/dictionary/filterDictionary/index.ts#L14">dictionary/filterDictionary/index.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns a new dictionary containing entries who&#39;s values satisfies the predicate</p>
+									<p>Returns a dictionary containing entries who&#39;s values satisfies the predicate</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -915,12 +931,12 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#dictionary" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A new, filtered <a href="modules.html#dictionary">Dictionary</a></p>
+							<p>A filtered <a href="modules.html#dictionary">Dictionary</a></p>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/dictionary/filterDictionary/index.ts#L21">dictionary/filterDictionary/index.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/dictionary/filterDictionary/index.ts#L21">dictionary/filterDictionary/index.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -959,45 +975,74 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/collection/find/index.ts#L9">collection/find/index.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/collection/find/index.ts#L18">collection/find/index.ts:18</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find if an item exists in a collection</p>
+								</div>
+							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
 									<h4>T</h4>
+									<div class="tsd-comment tsd-typography">
+										<p>The type of the collection item</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>col: <a href="modules.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A <a href="modules.html#collection">Collection</a></p>
+									</div>
 								</li>
 								<li>
 									<h5>p: <a href="modules.html#predicate" class="tsd-signature-type">Predicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A <a href="modules.html#predicate">Predicate</a></p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#maybe" class="tsd-signature-type">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The first item that satisfies the predicate or undefined if no item satisfies the predicate
+								In case that the collection is a <a href="modules.html#dictionary">Dictionary</a>, the entries are not ordered so if more than one
+							item satisfies the predicate an arbitrary one will be returned</p>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/collection/find/index.ts#L10">collection/find/index.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/collection/find/index.ts#L26">collection/find/index.ts:26</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The curried version of <code>find</code></p>
+								</div>
+							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
 									<h4>T</h4>
+									<div class="tsd-comment tsd-typography">
+										<p>The type of the collection item</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>p: <a href="modules.html#predicate" class="tsd-signature-type">Predicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A <a href="modules.html#predicate">Predicate</a></p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#fn" class="tsd-signature-type">Fn</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="modules.html#maybe" class="tsd-signature-type">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A function accepting a collection and optionally  returning an item</p>
 						</li>
 					</ul>
 				</section>
@@ -1012,7 +1057,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/flatMap.ts#L8">list/flatMap.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/flatMap.ts#L8">list/flatMap.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1038,7 +1083,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/flatMap.ts#L9">list/flatMap.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/flatMap.ts#L9">list/flatMap.ts:9</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1074,7 +1119,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/function/flow.ts#L3">function/flow.ts:3</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/function/flow.ts#L3">function/flow.ts:3</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1124,7 +1169,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/function/flow.ts#L11">function/flow.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/function/flow.ts#L11">function/flow.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1168,7 +1213,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/function/flow.ts#L18">function/flow.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/function/flow.ts#L18">function/flow.ts:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1206,7 +1251,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/function/flow.ts#L19">function/flow.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/function/flow.ts#L19">function/flow.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1238,7 +1283,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/function/flow.ts#L20">function/flow.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/function/flow.ts#L20">function/flow.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1267,28 +1312,35 @@
 					<a name="frompairs" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> from<wbr>Pairs</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">from<wbr>Pairs&lt;T&gt;<span class="tsd-signature-symbol">(</span>pairs<span class="tsd-signature-symbol">: </span><a href="modules.html#list" class="tsd-signature-type">List</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#pair" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#dictionary" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">from<wbr>Pairs&lt;T&gt;<span class="tsd-signature-symbol">(</span>entries<span class="tsd-signature-symbol">: </span><a href="modules.html#list" class="tsd-signature-type">List</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#entry" class="tsd-signature-type">Entry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#dictionary" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/dictionary/fromPairs/fromPairs.ts#L4">dictionary/fromPairs/fromPairs.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/dictionary/fromPairs/fromPairs.ts#L9">dictionary/fromPairs/fromPairs.ts:9</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
 									<h4>T</h4>
+									<div class="tsd-comment tsd-typography">
+										<p>the List item type</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>pairs: <a href="modules.html#list" class="tsd-signature-type">List</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#pair" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>entries: <a href="modules.html#list" class="tsd-signature-type">List</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#entry" class="tsd-signature-type">Entry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A list of entries</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#dictionary" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A dictionary constructed from the entries</p>
 						</li>
 					</ul>
 				</section>
@@ -1303,7 +1355,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/object/get.ts#L7">object/get.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/object/get.ts#L7">object/get.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1329,7 +1381,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/object/get.ts#L8">object/get.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/object/get.ts#L8">object/get.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1351,6 +1403,58 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="getentrykey" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Entry<wbr>Key</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Entry<wbr>Key<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><a href="modules.html#entry" class="tsd-signature-type">Entry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/dictionary/dictionary.ts#L12">dictionary/dictionary.ts:12</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <a href="modules.html#entry" class="tsd-signature-type">Entry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="getentryvalue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Entry<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Entry<wbr>Value&lt;T&gt;<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><a href="modules.html#entry" class="tsd-signature-type">Entry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/dictionary/dictionary.ts#L13">dictionary/dictionary.ts:13</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <a href="modules.html#entry" class="tsd-signature-type">Entry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
 					<a name="groupby" class="tsd-anchor"></a>
 					<h3>group<wbr>By</h3>
@@ -1362,7 +1466,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/groupBy.ts#L12">list/groupBy.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/groupBy.ts#L12">list/groupBy.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1385,7 +1489,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/groupBy.ts#L13">list/groupBy.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/groupBy.ts#L13">list/groupBy.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1415,7 +1519,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/object/has.ts#L9">object/has.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/object/has.ts#L9">object/has.ts:9</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1438,7 +1542,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/object/has.ts#L10">object/has.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/object/has.ts#L10">object/has.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1467,7 +1571,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/head.ts#L4">list/head.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/head.ts#L4">list/head.ts:4</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1496,7 +1600,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/function/identity.ts#L1">function/identity.ts:1</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/function/identity.ts#L1">function/identity.ts:1</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1525,16 +1629,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/dictionary/invert/invert.ts#L4">dictionary/invert/invert.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/dictionary/invert/invert.ts#L10">dictionary/invert/invert.ts:10</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a new dictionary with the keys and values of <code>dict</code> inverted.
+									If <code>dict</code> contains duplicate values, one of them will be chosen arbitrarily.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>dict: <a href="modules.html#dictionary" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A dictionary</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#dictionary" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An inverted dictionary</p>
 						</li>
 					</ul>
 				</section>
@@ -1549,7 +1663,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/keyBy.ts#L11">list/keyBy.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/keyBy.ts#L11">list/keyBy.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1572,7 +1686,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/keyBy.ts#L12">list/keyBy.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/keyBy.ts#L12">list/keyBy.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1601,16 +1715,25 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/dictionary/keys/keys.ts#L7">dictionary/keys/keys.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/dictionary/keys/keys.ts#L11">dictionary/keys/keys.ts:11</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the keys of the dictionary</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>dict: <a href="modules.html#dictionary" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A dictionary</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#list" class="tsd-signature-type">List</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>a list of keys</p>
 						</li>
 					</ul>
 				</section>
@@ -1625,7 +1748,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/map.ts#L14">list/map.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/map.ts#L14">list/map.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1671,7 +1794,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/map.ts#L23">list/map.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/map.ts#L23">list/map.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1719,7 +1842,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/dictionary/mapDictionary/index.ts#L16">dictionary/mapDictionary/index.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/dictionary/mapDictionary/index.ts#L16">dictionary/mapDictionary/index.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1732,13 +1855,13 @@
 								<li>
 									<h4>I</h4>
 									<div class="tsd-comment tsd-typography">
-										<p>The input type.</p>
+										<p>The element type of the input dictionary.</p>
 									</div>
 								</li>
 								<li>
 									<h4>O</h4>
 									<div class="tsd-comment tsd-typography">
-										<p>The output type.</p>
+										<p>The element type of the transformed dictionary.</p>
 									</div>
 								</li>
 							</ul>
@@ -1747,28 +1870,28 @@
 								<li>
 									<h5>dict: <a href="modules.html#dictionary" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The dictionary to map over.</p>
+										<p>The dictionary to transform.</p>
 									</div>
 								</li>
 								<li>
 									<h5>f: <a href="modules.html#fn" class="tsd-signature-type">Fn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The transform function.</p>
+										<p>A transform function.</p>
 									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#dictionary" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>The transformed dictionary</p>
+							<p>A transformed dictionary</p>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/dictionary/mapDictionary/index.ts#L25">dictionary/mapDictionary/index.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/dictionary/mapDictionary/index.ts#L25">dictionary/mapDictionary/index.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Curried <a href="modules.html#collection">Collection</a> map</p>
+									<p>Curried <a href="modules.html#dictionary">Dictionary</a> map</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1776,13 +1899,13 @@
 								<li>
 									<h4>I</h4>
 									<div class="tsd-comment tsd-typography">
-										<p>The input type.</p>
+										<p>The element type of the input dictionary.</p>
 									</div>
 								</li>
 								<li>
 									<h4>O</h4>
 									<div class="tsd-comment tsd-typography">
-										<p>The output type.</p>
+										<p>The element type of the transformed dictionary.</p>
 									</div>
 								</li>
 							</ul>
@@ -1791,12 +1914,12 @@
 								<li>
 									<h5>f: <a href="modules.html#fn" class="tsd-signature-type">Fn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The transform function.</p>
+										<p>A transform function.</p>
 									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#fn" class="tsd-signature-type">Fn</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#dictionary" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="modules.html#dictionary" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>The {@link Map} function that accepts the collection</p>
+							<p>A function that accepts a dictionary and returns a transformed dictionary</p>
 						</li>
 					</ul>
 				</section>
@@ -1811,7 +1934,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/object/omit.ts#L19">object/omit.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/object/omit.ts#L18">object/omit.ts:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1837,7 +1960,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/object/omit.ts#L20">object/omit.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/object/omit.ts#L19">object/omit.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1860,6 +1983,70 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="overentries" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> over<wbr>Entries</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">over<wbr>Entries&lt;I, O&gt;<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><a href="modules.html#fn" class="tsd-signature-type">Fn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#fn" class="tsd-signature-type">Fn</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#entry" class="tsd-signature-type">Entry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="modules.html#entry" class="tsd-signature-type">Entry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/dictionary/dictionary.ts#L22">dictionary/dictionary.ts:22</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>I</h4>
+								</li>
+								<li>
+									<h4>O</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f: <a href="modules.html#fn" class="tsd-signature-type">Fn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#fn" class="tsd-signature-type">Fn</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#entry" class="tsd-signature-type">Entry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="modules.html#entry" class="tsd-signature-type">Entry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="overentryvalues" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> over<wbr>Entry<wbr>Values</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">over<wbr>Entry<wbr>Values&lt;I, O&gt;<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><a href="modules.html#fn" class="tsd-signature-type">Fn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#fn" class="tsd-signature-type">Fn</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#entry" class="tsd-signature-type">Entry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/dictionary/dictionary.ts#L20">dictionary/dictionary.ts:20</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>I</h4>
+								</li>
+								<li>
+									<h4>O</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f: <a href="modules.html#fn" class="tsd-signature-type">Fn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#fn" class="tsd-signature-type">Fn</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#entry" class="tsd-signature-type">Entry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
 					<a name="pick" class="tsd-anchor"></a>
 					<h3>pick</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
@@ -1870,7 +2057,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/object/pick.ts#L19">object/pick.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/object/pick.ts#L18">object/pick.ts:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1896,7 +2083,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/object/pick.ts#L20">object/pick.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/object/pick.ts#L19">object/pick.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1929,7 +2116,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/object/set.ts#L12">object/set.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/object/set.ts#L12">object/set.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1958,7 +2145,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/object/set.ts#L13">object/set.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/object/set.ts#L13">object/set.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1987,52 +2174,80 @@
 					<a name="some" class="tsd-anchor"></a>
 					<h3>some</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">some&lt;T&gt;<span class="tsd-signature-symbol">(</span>collection<span class="tsd-signature-symbol">: </span><a href="modules.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, p<span class="tsd-signature-symbol">: </span><a href="modules.html#predicate" class="tsd-signature-type">Predicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">some&lt;T&gt;<span class="tsd-signature-symbol">(</span>col<span class="tsd-signature-symbol">: </span><a href="modules.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, p<span class="tsd-signature-symbol">: </span><a href="modules.html#predicate" class="tsd-signature-type">Predicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 						<li class="tsd-signature tsd-kind-icon">some&lt;T&gt;<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="modules.html#predicate" class="tsd-signature-type">Predicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#fn" class="tsd-signature-type">Fn</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/collection/some/index.ts#L8">collection/some/index.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/collection/some/index.ts#L15">collection/some/index.ts:15</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if some items in this collection satisfies a predicate</p>
+								</div>
+							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
 									<h4>T</h4>
+									<div class="tsd-comment tsd-typography">
+										<p>The <a href="modules.html#collection">Collection</a> item type</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>collection: <a href="modules.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>col: <a href="modules.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A <a href="modules.html#collection">Collection</a> to check</p>
+									</div>
 								</li>
 								<li>
 									<h5>p: <a href="modules.html#predicate" class="tsd-signature-type">Predicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A <a href="modules.html#predicate">Predicate</a></p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true if some items in this collection satisfies the predicate and false otherwise</p>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/collection/some/index.ts#L9">collection/some/index.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/collection/some/index.ts#L24">collection/some/index.ts:24</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if every item in this collection satisfies a predicate</p>
+								</div>
+							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
 									<h4>T</h4>
+									<div class="tsd-comment tsd-typography">
+										<p>The <a href="modules.html#collection">Collection</a> item type</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>p: <a href="modules.html#predicate" class="tsd-signature-type">Predicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A <a href="modules.html#predicate">Predicate</a></p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#fn" class="tsd-signature-type">Fn</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A function accepting a collection and returning true if some item in this collection satisfies the
+							predicate and false otherwise</p>
 						</li>
 					</ul>
 				</section>
@@ -2047,7 +2262,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/sortBy.ts#L10">list/sortBy.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/sortBy.ts#L10">list/sortBy.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2070,7 +2285,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/sortBy.ts#L11">list/sortBy.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/sortBy.ts#L11">list/sortBy.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2099,7 +2314,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/tail.ts#L4">list/tail.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/tail.ts#L4">list/tail.ts:4</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2129,7 +2344,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/take.ts#L17">list/take.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/take.ts#L17">list/take.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2152,7 +2367,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/take.ts#L18">list/take.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/take.ts#L18">list/take.ts:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2175,28 +2390,75 @@
 					<a name="topairs" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> to<wbr>Pairs</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Pairs&lt;T&gt;<span class="tsd-signature-symbol">(</span>dict<span class="tsd-signature-symbol">: </span><a href="modules.html#dictionary" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#list" class="tsd-signature-type">List</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#pair" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Pairs&lt;T&gt;<span class="tsd-signature-symbol">(</span>dict<span class="tsd-signature-symbol">: </span><a href="modules.html#dictionary" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#list" class="tsd-signature-type">List</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#entry" class="tsd-signature-type">Entry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/dictionary/toPairs/toPairs.ts#L4">dictionary/toPairs/toPairs.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/dictionary/toPairs/toPairs.ts#L10">dictionary/toPairs/toPairs.ts:10</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a list of dictionary entries</p>
+								</div>
+							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
 									<h4>T</h4>
+									<div class="tsd-comment tsd-typography">
+										<p>The type of the dictionary item</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>dict: <a href="modules.html#dictionary" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A dictionary</p>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="modules.html#list" class="tsd-signature-type">List</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#pair" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#list" class="tsd-signature-type">List</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#entry" class="tsd-signature-type">Entry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A list of entries</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="transformdictionary" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> transform<wbr>Dictionary</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">transform<wbr>Dictionary&lt;I, O&gt;<span class="tsd-signature-symbol">(</span>dict<span class="tsd-signature-symbol">: </span><a href="modules.html#dictionary" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span>, tx<span class="tsd-signature-symbol">: </span><a href="modules.html#fn" class="tsd-signature-type">Fn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">Entry</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">Entry</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#dictionary" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/dictionary/dictionary.ts#L15">dictionary/dictionary.ts:15</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>I</h4>
+								</li>
+								<li>
+									<h4>O</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dict: <a href="modules.html#dictionary" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>tx: <a href="modules.html#fn" class="tsd-signature-type">Fn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">Entry</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">Entry</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#dictionary" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -2210,7 +2472,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/uniq.ts#L4">list/uniq.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/uniq.ts#L4">list/uniq.ts:4</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2239,7 +2501,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/unzip.ts#L4">list/unzip.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/unzip.ts#L4">list/unzip.ts:4</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2272,7 +2534,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/object/update.ts#L12">object/update.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/object/update.ts#L12">object/update.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2301,7 +2563,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/object/update.ts#L13">object/update.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/object/update.ts#L13">object/update.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2336,22 +2598,34 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/dictionary/values/values.ts#L7">dictionary/values/values.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/dictionary/values/values.ts#L12">dictionary/values/values.ts:12</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the values of a dictionary</p>
+								</div>
+							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
 									<h4>T</h4>
+									<div class="tsd-comment tsd-typography">
+										<p>The type of the dictionary item</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>dict: <a href="modules.html#dictionary" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A dictionary</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#list" class="tsd-signature-type">List</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A list of the dictionary values</p>
 						</li>
 					</ul>
 				</section>
@@ -2366,7 +2640,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/zip.ts#L14">list/zip.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/zip.ts#L14">list/zip.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2392,7 +2666,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/zip.ts#L15">list/zip.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/zip.ts#L15">list/zip.ts:15</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2425,7 +2699,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/zipNonMatching.ts#L11">list/zipNonMatching.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/zipNonMatching.ts#L11">list/zipNonMatching.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2451,7 +2725,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/b1d528a/src/list/zipNonMatching.ts#L12">list/zipNonMatching.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/oren-hollander/lowest/blob/f3be7d3/src/list/zipNonMatching.ts#L12">list/zipNonMatching.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2495,6 +2769,9 @@
 						<a href="modules.html#dictionary" class="tsd-kind-icon">Dictionary</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#entry" class="tsd-kind-icon">Entry</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="modules.html#fn" class="tsd-kind-icon">Fn</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
@@ -2508,9 +2785,6 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="modules.html#maybe" class="tsd-kind-icon">Maybe</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
-						<a href="modules.html#pair" class="tsd-kind-icon">Pair</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="modules.html#predicate" class="tsd-kind-icon">Predicate</a>
@@ -2560,6 +2834,12 @@
 					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="modules.html#get" class="tsd-kind-icon">get</a>
 					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getentrykey" class="tsd-kind-icon">get<wbr>Entry<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#getentryvalue" class="tsd-kind-icon">get<wbr>Entry<wbr>Value</a>
+					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="modules.html#groupby" class="tsd-kind-icon">group<wbr>By</a>
 					</li>
@@ -2591,6 +2871,12 @@
 						<a href="modules.html#omit" class="tsd-kind-icon">omit</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#overentries" class="tsd-kind-icon">over<wbr>Entries</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#overentryvalues" class="tsd-kind-icon">over<wbr>Entry<wbr>Values</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="modules.html#pick" class="tsd-kind-icon">pick</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
@@ -2610,6 +2896,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="modules.html#topairs" class="tsd-kind-icon">to<wbr>Pairs</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#transformdictionary" class="tsd-kind-icon">transform<wbr>Dictionary</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="modules.html#uniq" class="tsd-kind-icon">uniq</a>

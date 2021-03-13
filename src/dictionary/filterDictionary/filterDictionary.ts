@@ -1,6 +1,5 @@
-import { overPairValues, transformDictionary } from '../../util/util'
 import { Predicate } from '../../function'
-import { Dictionary } from '../dictionary'
+import { Dictionary, overEntryValues, transformDictionary } from '../dictionary'
 
 export const filterDictionary = <T>(dict: Dictionary<T>, p: Predicate<T>): Dictionary<T> =>
-  transformDictionary(dict, values => values.filter(overPairValues(p)))
+  transformDictionary(dict, values => values.filter(overEntryValues(p)))

@@ -1,4 +1,9 @@
 import { List } from '../../list'
-import { Dictionary, Pair } from '../dictionary'
+import { Dictionary, Entry } from '../dictionary'
 
-export const fromPairs = <T>(pairs: List<Pair<T>>): Dictionary<T> => Object.fromEntries(pairs)
+/**
+ * @template T the List item type
+ * @param entries A list of entries
+ * @return A dictionary constructed from the entries
+ */
+export const fromPairs = <T>(entries: List<Entry<T>>): Dictionary<T> => Object.fromEntries(entries)
