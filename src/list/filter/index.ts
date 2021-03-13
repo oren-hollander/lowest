@@ -7,6 +7,7 @@ const curried = curry2(filter)
 
 /**
  * Filters the collection by keeping all items which satisfy the predicate
+ * @template T the list item type
  * @param list The [[List]]
  * @param p The [[Predicate]]
  * @return A new list with items that satisfies the predicate

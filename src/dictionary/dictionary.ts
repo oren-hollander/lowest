@@ -4,9 +4,7 @@ import { Fn } from '../function'
  * A read only dictionary. Keys are strings and values are of the same type T
  * @template T The dictionary item type
  */
-export type Dictionary<T> = {
-  readonly [key: string]: T
-}
+export type Dictionary<T> = Readonly<Record<string, T>>
 
 /**
  * A key and value pair - a dictionary entry

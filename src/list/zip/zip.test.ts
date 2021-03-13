@@ -1,26 +1,19 @@
 import { zip } from '.'
 
-describe('zip', () => {
-  test('should zip two lists', () => {
-    expect(zip([1, 2, 3], ['a', 'b', 'c'])).toEqual([
-      [1, 'a'],
-      [2, 'b'],
-      [3, 'c']
-    ])
-  })
-
-  test('should zip two lists with different length', () => {
+describe('zipNonMatching', () => {
+  test('should zipShort two non matching lists', () => {
     expect(zip([1, 2, 3], ['a', 'b'])).toEqual([
       [1, 'a'],
-      [2, 'b']
+      [2, 'b'],
+      [3, undefined]
     ])
   })
 
-  test('curried version should zip two lists', () => {
-    expect(zip(['a', 'b', 'c'])([1, 2, 3])).toEqual([
+  test('curried version should zipShort two non matching lists', () => {
+    expect(zip(['a', 'b'])([1, 2, 3])).toEqual([
       [1, 'a'],
       [2, 'b'],
-      [3, 'c']
+      [3, undefined]
     ])
   })
 })
