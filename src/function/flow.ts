@@ -3,12 +3,14 @@ import { Fn } from './function'
 /**
  * Composes and executes several functions
  * @param values The input to the composed function
- * @param f1 Functions that are executed in order, each output is fed to the next function's input
- * @param f2
- * @param f3
- * @param f4
- * @param f5
+ * @param f1 See below
+ * @param f2 See below
+ * @param f3 See below
+ * @param f4 See below
+ * @param f5 See below
  * @return the last function's output
+ * The f1..f5 functions are executed in order, the first one is fed with ```values```
+ * and each output is fed to the next function's input.
  */
 export function flow<T, F1, F2, F3, F4, F5>(
   values: T,
