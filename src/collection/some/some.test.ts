@@ -1,5 +1,5 @@
-import { some } from './some'
-import { identity } from '../function'
+import { some } from '.'
+import { identity } from '../../function'
 
 describe('some', () => {
   describe('non curried version', () => {

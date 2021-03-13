@@ -1,5 +1,5 @@
-import { filterDictionary } from './filterDictionary'
-import { Dictionary } from './dictionary'
+import { filterDictionary } from '.'
+import { Dictionary } from '../dictionary'
 
 describe('filter', () => {
   describe('dictionary', () => {

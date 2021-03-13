@@ -1,5 +1,5 @@
-import { Nilable, overPairValues, transformDictionary } from '../util/util'
-import { Dictionary } from './dictionary'
+import { Nilable, overPairValues, transformDictionary } from '../../util/util'
+import { Dictionary } from '../dictionary'
 
 const isNotNil = (value: unknown): boolean => value !== null && value !== undefined
 

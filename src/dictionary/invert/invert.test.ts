@@ -1,4 +1,4 @@
-import { invert } from './invert'
+import { invert } from '.'
 
 describe('keys', () => {
   test('should invert an empty dictionary to an empty dictionary', () => {

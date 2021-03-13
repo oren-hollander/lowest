@@ -1,0 +1,1 @@
+export { compactDictionary } from './compactDictionary'

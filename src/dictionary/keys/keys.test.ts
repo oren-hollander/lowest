@@ -1,4 +1,4 @@
-import { keys } from './keys'
+import { keys } from '.'
 
 describe('keys', () => {
   test('should convert empty dictionary to empty list', () => {

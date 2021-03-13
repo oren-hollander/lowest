@@ -1,4 +1,4 @@
-import { compactDictionary } from './compactDictionary'
+import { compactDictionary } from '.'
 
 describe('compact', () => {
   describe('dictionary', () => {
