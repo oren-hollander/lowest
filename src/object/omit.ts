@@ -1,6 +1,7 @@
 import { find } from '../collection'
 import { flow, Fn } from '../function'
-import { fromPairs, getEntryKey, toPairs } from '../dictionary'
+import { fromPairs, toPairs } from '../dictionary'
+import { getEntryKey } from '../dictionary/dictionary'
 import { List, filter } from '../list'
 import { curry2 } from '../util/curry'
 import { AnyObject } from './object'

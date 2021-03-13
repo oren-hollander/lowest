@@ -20,9 +20,25 @@ export function flow<T, F1, F2, F3, F4, F5>(
   f4: Fn<F3, F4>,
   f5: Fn<F4, F5>
 ): F5
+
+/**
+ * See the docs for the first overload
+ */
 export function flow<T, F1, F2, F3, F4>(values: T, f1: Fn<T, F1>, f2: Fn<F1, F2>, f3: Fn<F2, F3>, f4: Fn<F3, F4>): F4
+
+/**
+ * See the docs for the first overload
+ */
 export function flow<T, F1, F2, F3>(values: T, f1: Fn<T, F1>, f2: Fn<F1, F2>, f3: Fn<F2, F3>): F3
+
+/**
+ * See the docs for the first overload
+ */
 export function flow<T, F1, F2>(values: T, f1: Fn<T, F1>, f2: Fn<F1, F2>): F2
+
+/**
+ * See the docs for the first overload
+ */
 export function flow<T, F1>(values: T, f1: Fn<T, F1>): F1
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

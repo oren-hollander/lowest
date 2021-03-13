@@ -1,4 +1,4 @@
 export * from './every'
 export * from './find'
-export * from './collection'
+export type { Collection } from './collection'
 export * from './some'

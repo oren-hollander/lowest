@@ -1,3 +1,3 @@
 export * from './flow'
 export * from './identity'
-export * from './function'
+export type { Predicate, Fn, Fn2, Fn3 } from './function'

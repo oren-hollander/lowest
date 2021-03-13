@@ -1,11 +1,16 @@
 import { Fn } from '../function'
 
+/**
+ * A read only dictionary. Keys are strings and values are of the same type T
+ * @template T The dictionary item type
+ */
 export type Dictionary<T> = {
   readonly [key: string]: T
 }
 
 /**
  * A key and value pair - a dictionary entry
+ * @template T The entry item type
  */
 export type Entry<T> = [string, T]
 
