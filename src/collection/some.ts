@@ -1,6 +1,7 @@
-import { Collection, Predicate, Fn } from '../types'
-import { asList } from '../util'
-import { curry2 } from '../curry'
+import { asList } from '../list/list'
+import { curry2 } from '../util/curry'
+import { Fn, Predicate } from '../function'
+import { Collection } from './collection'
 
 const someImpl = curry2(<T>(col: Collection<T>, p: Predicate<T>): boolean => asList(col).some(p))
 

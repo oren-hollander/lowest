@@ -1,2 +1,3 @@
-export { flow } from './flow'
-export { identity } from './identity'
+export * from './flow'
+export * from './identity'
+export * from './function'

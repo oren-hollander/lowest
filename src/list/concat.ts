@@ -1,6 +1,6 @@
-import { Fn } from '../types'
 import { List } from './list'
-import { curry2 } from '../curry'
+import { curry2 } from '../util/curry'
+import { Fn } from '../function'
 
 const concatImpl = curry2(<T>(toList: List<T>, list: List<T>): List<T> => toList.concat(list))
 

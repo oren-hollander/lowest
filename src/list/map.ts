@@ -1,6 +1,6 @@
-import type { Fn } from '../types'
 import { List } from './list'
-import { curry2 } from '../curry'
+import { curry2 } from '../util/curry'
+import { Fn } from '../function'
 
 const mapImpl = curry2(<I, O>(list: List<I>, f: Fn<I, O>): List<O> => list.map(f))
 /**

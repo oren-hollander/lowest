@@ -1,5 +1,5 @@
-import { Fn, Fn2, Fn3 } from './types'
 import { isUndefined } from 'lodash'
+import { Fn, Fn2, Fn3 } from '../function'
 
 export type Curry2<A, B, R> = (a_b: A | B, b?: B) => R | Fn<A, R>
 

@@ -1,7 +1,7 @@
-import type { Fn } from '../types'
 import { flatMap as _flatMap } from 'lodash'
 import { List } from './list'
-import { curry2 } from '../curry'
+import { curry2 } from '../util/curry'
+import { Fn } from '../function'
 
 const flatMapImpl = curry2(<I, O>(list: List<I>, f: Fn<I, List<O>>): List<O> => _flatMap(list, f))
 

@@ -1,5 +1,6 @@
-import { AnyObject, Fn } from '../types'
-import { curry2 } from '../curry'
+import { curry2 } from '../util/curry'
+import { Fn } from '../function'
+import { AnyObject } from './object'
 
 const assignImpl = curry2(<A extends AnyObject, B extends AnyObject>(a: A, b: B): A | B => ({ ...a, ...b }))
 

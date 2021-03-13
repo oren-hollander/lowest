@@ -1,7 +1,7 @@
 import { sortBy as _sortBy } from 'lodash'
-import { Fn } from '../types'
 import { List } from './list'
-import { curry2 } from '../curry'
+import { curry2 } from '../util/curry'
+import { Fn } from '../function'
 
 type SortValue<T> = Fn<T, unknown | List<unknown>>
 

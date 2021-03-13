@@ -1,5 +1,5 @@
 import { has } from './has'
-import { Dictionary } from '../types'
+import { Dictionary } from '../dictionary'
 
 interface Thing {
   a: number

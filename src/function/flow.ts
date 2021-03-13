@@ -1,4 +1,4 @@
-import { Fn } from '../types'
+import { Fn } from './function'
 
 export function flow<T, TX1, TX2, TX3, TX4, TX5>(
   values: T,

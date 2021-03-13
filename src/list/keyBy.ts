@@ -1,7 +1,8 @@
 import { keyBy as _keyBy } from 'lodash'
-import { Dictionary, Fn } from '../types'
 import { List } from './list'
-import { curry2 } from '../curry'
+import { curry2 } from '../util/curry'
+import { Fn } from '../function'
+import { Dictionary } from '../dictionary'
 
 type Key<T> = Fn<T, string>
 

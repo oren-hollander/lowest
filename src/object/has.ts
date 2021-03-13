@@ -1,5 +1,6 @@
-import { AnyObject, Fn } from '../types'
-import { curry2 } from '../curry'
+import { curry2 } from '../util/curry'
+import { Fn } from '../function'
+import { AnyObject } from './object'
 
 const hasImpl = curry2(<T extends AnyObject>(obj: T, key: keyof T): boolean =>
   Object.prototype.hasOwnProperty.call(obj, key)

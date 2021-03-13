@@ -1,5 +1,6 @@
-import { flow, update } from '../index'
+import { flow } from './flow'
 import { map } from '../list'
+import { update } from '../object'
 
 describe('flow', () => {
   test('should apply all operations in the flow for list of numbers', () => {

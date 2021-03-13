@@ -15,7 +15,7 @@
     "lint": "eslint . --ext .ts",
     "format": "prettier --write \"src/**/*.ts\"",
     "docs": "rimraf docs && typedoc",
-    "build": "npm run format && npm run lint && tsc",
+    "build": "npm run format && npm run lint && npm run docs && tsc",
     "test": "tsc --project ./tsconfig.test.json && jest",
     "prepare": "husky install && rimraf dist && npm run build",
     "prepublishOnly": "jest && npm run lint",

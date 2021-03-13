@@ -1,8 +1,8 @@
-import { Fn, Tuple } from '../types'
 import { zip as _zip } from 'lodash'
 import { take } from './take'
-import { List } from './list'
-import { curry2 } from '../curry'
+import { List, Tuple } from './list'
+import { curry2 } from '../util/curry'
+import { Fn } from '../function'
 
 const zipImpl = curry2(
   <L, R>(left: List<L>, right: List<R>): List<Tuple<L, R>> => {

@@ -1,5 +1,6 @@
 import { find } from './find'
-import { Collection, Dictionary } from '../types'
+import { Dictionary } from '../dictionary'
+import { Collection } from './collection'
 
 describe('find', () => {
   describe('list', () => {

@@ -1,6 +1,6 @@
-import { Nilable } from '../types'
 import { filter } from './filter'
 import { List } from './list'
+import { Nilable } from '../util/util'
 
 const isNotNil = (value: unknown): boolean => value !== null && value !== undefined
 

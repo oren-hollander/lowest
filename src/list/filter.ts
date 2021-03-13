@@ -1,6 +1,6 @@
-import { Predicate, Fn } from '../types'
 import { List } from './list'
-import { curry2 } from '../curry'
+import { curry2 } from '../util/curry'
+import { Fn, Predicate } from '../function'
 
 const filterImpl = curry2(<T>(list: List<T>, p: Predicate<T>): List<T> => list.filter(p))
 

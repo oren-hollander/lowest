@@ -1,5 +1,6 @@
-import { AnyObject, Fn } from '../types'
-import { curry3 } from '../curry'
+import { curry3 } from '../util/curry'
+import { Fn } from '../function'
+import { AnyObject } from './object'
 
 const setImpl = curry3(
   <T extends AnyObject, K extends keyof T>(obj: T, key: K, value: T[K]): T => ({

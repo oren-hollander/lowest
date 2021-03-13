@@ -1,7 +1,8 @@
-import { Fn, Tuple, Maybe } from '../types'
 import { zip as _zip } from 'lodash'
-import { List } from './list'
-import { curry2 } from '../curry'
+import { List, Tuple } from './list'
+import { curry2 } from '../util/curry'
+import { Fn } from '../function'
+import { Maybe } from '../util'
 
 type OptionalTuple<L, R> = Tuple<Maybe<L>, Maybe<R>>
 
