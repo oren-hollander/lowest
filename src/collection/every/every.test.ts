@@ -1,5 +1,5 @@
-import { every } from './every'
-import { identity } from '../function'
+import { every } from '.'
+import { identity } from '../../function'
 
 describe('every', () => {
   describe('non curried version', () => {
